@@ -1,21 +1,20 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
+const mainSwiper = new Swiper('#mainSwiper.swiper', {
+  // 자동롤링 4초마다
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  // 센터모드
+  centeredSlides: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  // 1.8걸침
+  slidesPerView: 1.8,
+  // 반복
   loop: true,
-
-  // If we need pagination
+  
+  direction: 'horizontal',
   pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+    el: '#mainSwiper .swiper-pagination',
   },
 });
