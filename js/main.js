@@ -1,20 +1,19 @@
-const mainSwiper = new Swiper('#mainSwiper.swiper', {
+const promotionSwiper = new Swiper('#promotionSwiper.swiper', {
   // 자동롤링 4초마다
   autoplay: {
-    delay: 2000,
+    delay: 4000,
     disableOnInteraction: false,
   },
-  // 센터모드
-  centeredSlides: true,
-  spaceBetween: 30,
-  slidesPerView: 3,
-  // 1.8걸침
-  slidesPerView: 1.8,
+  spaceBetween: 300,
   // 반복
   loop: true,
   
   direction: 'horizontal',
   pagination: {
-    el: '#mainSwiper .swiper-pagination',
+    el: '#promotionSwiper .swiper-pagination',
   },
+  navigation: {
+    nextEl: '#promotionSwiper .swiper-button-next',
+    prevEl: '#promotionSwiper .swiper-button-prev',
+  }
 });

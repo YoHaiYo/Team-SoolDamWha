@@ -27,92 +27,164 @@
 <body>
 
   <header id="hd">
-    <div class="container bg-white border-bottom border-primary border-2 text-center">
+    <div class="wrap bg-white border-bottom border-primary border-2 text-center">
       <ul id="login" class="d-flex justify-content-end">
-        <li><a href="">로그인1</a></li>
-        <li><a href="">로그인2</a></li>
-        <li><a href="">로그인3</a></li>
+        <li class="mx-3"><a href="">로그인</a></li>
+        <li class="mx-3"><a href="">회원가입</a></li>
+        <li class="mx-3"><a href="">한국어/영어</a></li>
       </ul>
       <h1>
         <a href="">
-          <img src="https://placehold.co/600x120/png" alt="">
+          <img src="https://placehold.co/480x120/png" alt="">
         </a>
       </h1>
-      <ul id="gnb" class="d-flex justify-content-center">
-        <li><a href="">대메뉴1</a></li>
-        <li><a href="">대메뉴2</a></li>
-        <li><a href="">대메뉴3</a></li>
-        <li><a href="">대메뉴4</a></li>
-        <li><a href="">대메뉴5</a></li>
+      <ul id="gnb" class="d-flex justify-content-around">
+        <li><a href="">구독</a></li>
+        <li><a href="">전체상품</a></li>
+        <li><a href="">베스트</a></li>
+        <li><a href="">이벤트</a></li>
+        <li><a href="">Q & A</a></li>
       </ul>
     </div>
   </header>
-  <section>
-    <section id="silde">
-      <!-- swiper-slide-active 가 활성화된 슬라이드. 얘에 css 주면 커스터마이징 가능 ! -->
-      <div class="swiper" id="mainSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <span>텍스트1</span>
-          </div>
-          <div class="swiper-slide">
-            <span>텍스트2</span>
-          </div>
-          <div class="swiper-slide">
-            <span>텍스트3</span>
-          </div>
-          <div class="swiper-slide">
-            <span>텍스트4</span>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </section>
 
-    <section id="subscribe" class="text-center">
+  <section id="promotion" class="mb-5">
+    <div class="swiper" id="promotionSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://placehold.co/1580x480/png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://placehold.co/1580x480/png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://placehold.co/1580x480/png" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <main class="wrap">    
+    <section id="subscribeTitle" class="text-center mb-5">
       <h2><a href="">구독타이틀</a></h2>
-      <ul class="d-flex">
+      <ul class="d-flex justify-content-around">
         <li>
           <div>
-            <img src="https://placehold.co/290x290/png" alt="">
-            <span>증류주 담화박스</span>
+            <img class="rounded-circle" src="https://placehold.co/290x290/png" alt="">
+            <div>증류주 담화박스</div>
+          </div>
+        </li>
+        <li>
+          <div >
+            <img class="rounded-circle" src="https://placehold.co/290x290/png" alt="">
+            <div>증류주 담화박스</div>
           </div>
         </li>
         <li>
           <div>
-            <img src="https://placehold.co/290x290/png" alt="">
-            <span>증류주 담화박스</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="https://placehold.co/290x290/png" alt="">
-            <span>증류주 담화박스</span>
+            <img class="rounded-circle" src="https://placehold.co/290x290/png" alt="">
+            <div>증류주 담화박스</div>
           </div>
         </li>        
       </ul>
-      <button>구독하기</button>
+      <button class="btn btn-outline-primary" >구독하기</button>
     </section>
 
-    <section id="best" class="text-center">
-      <h2>BEST 타이틀</h2>
-      <ul class="d-flex">
-        <li class="m-3">
+    <section id="bestTitle" class="text-center mb-5">
+      <h2><a href="">BEST 타이틀</a></h2>
+      <ul class="d-flex justify-content-around">
+        <li>
           <img src="https://placehold.co/260x330/png" alt="">
         </li>
-        <li class="m-3">
+        <li>
           <img src="https://placehold.co/260x330/png" alt="">
         </li>
-        <li class="m-3">
+        <li>
           <img src="https://placehold.co/260x330/png" alt="">
         </li>
-        <li class="m-3">
+        <li>
           <img src="https://placehold.co/260x330/png" alt="">
         </li>
       </ul>
     </section>
 
-  </section>
+    <section id="itemTitle" class="mb-5">
+      <h2 class="text-center"><a href="">상품타이틀</a></h2>
+      <ul class="d-flex justify-content-around">
+        <li><button class="btn btn-outline-primary">탁주</button></li>
+        <li><button class="btn btn-outline-primary">청주</button></li>
+        <li><button class="btn btn-outline-primary">과실주</button></li>
+        <li><button class="btn btn-outline-primary">증류주</button></li>
+        <li><button class="btn btn-outline-primary">술잔</button></li>
+      </ul>
+      <ul class="d-flex justify-content-between flex-wrap">
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+      </ul>
+      <ul class="d-flex justify-content-between flex-wrap">
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+        <li><img src="https://placehold.co/290x380/png" alt=""></li>
+      </ul>
+    </section> 
+    
+    <section id="review" class="mb-5">
+      <h2 class="text-center"><a href="">상품후기</a></h2>
+    <ul class="d-flex justify-content-around">
+      <li>
+        <img src="https://placehold.co/260x330/png" alt="">
+      </li>
+      <li>
+        <img src="https://placehold.co/260x330/png" alt="">
+      </li>
+      <li>
+        <img src="https://placehold.co/260x330/png" alt="">
+      </li>
+      <li>
+        <img src="https://placehold.co/260x330/png" alt="">
+      </li>
+    </ul>
+    </section>
+    
+    <section id="contact" class="w-50 mx-auto">
+      <h2 class="text-center">
+        <a href="">Contact</a>
+      </h2>
+      <form action="#" name="contact-info" method="post" class="container d-flex flex-column">
+        <label for="name">이름</label>
+        <input type="text" name="name" placeholder="이름" required>
 
+        <label for="email">이메일</label>
+        <input type="email" name="email" placeholder="example@example.com" required>
+
+        <label for="message">메시지</label>
+        <input type="text" name="message" placeholder="메세지입력^^" required>
+
+        <div class="d-flex justify-content-center">
+          <input type="submit" name="send-btn" value="보내기" class="btn btn-outline-primary m-2">
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="fd" class="bg-secondary">
+    <h2><a href=""><img src="" alt=""></a></h2>
+    <div class="sns">
+      <ul class="d-flex justify-content-around">
+        <li>유튜브</li>
+        <li>트위티</li>
+        <li>인스타</li>
+        <li>페이스북</li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
