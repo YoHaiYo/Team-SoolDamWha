@@ -14,3 +14,6 @@ https://github.com/SeungEunChun
 
 YoHaiYo
 https://github.com/YoHaiYo
+
+**배포용링크(임시)**
+https://yohaiyo.github.io/Team-SolDamWha/
