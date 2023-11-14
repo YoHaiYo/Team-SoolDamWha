@@ -60,11 +60,9 @@
 #contact input {
   color: #868282;
 }
-
-#contact #send input {
+#contact #send input{
   color: #333;
 }
-
 #contact input::placeholder {
   color: #868282;
 }
