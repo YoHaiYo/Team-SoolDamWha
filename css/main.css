@@ -8,3 +8,20 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+  color: #363062;
+}
+
+/* 임시 */
+.sooldam-btn {
+  margin: 0 auto;
+  background-color: #FFDF80;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+

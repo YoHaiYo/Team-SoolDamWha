@@ -1,0 +1,229 @@
+/* .swiper {
+  width: 100%;
+} */
+
+h2 {
+  font-family: 'SOYOMapleBoldTTF', sans-serif;
+}
+
+/* Common */
+/* .wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+/* itemTitle */
+#itemTitle * {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mg-topBottom {
+  margin: 50px 0;
+}
+
+#itemTitle h2 {
+  margin-bottom: 50px;
+}
+
+#itemTitle h2 a {
+  color: #363062;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 35px;
+}
+
+#itemTitle .itemTitleBox {
+  width: 430px;
+  margin: 0 auto;
+}
+
+#itemTitle .itemTitleBox li {
+  width: auto;
+  height: 115px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 20px;
+  text-align: center;
+}
+
+#itemTitle .itemTitleBox img {
+  width: 70px;
+}
+
+#itemTitle .itemTitleBox li>div {
+  width: 80px;
+}
+
+/* itemTitle img Area*/
+#itemTitle .itemImgWrap {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+}
+
+#itemTitle .itemImgWrap .Imgbox {
+  width: 290px;
+  margin-bottom: 50px;
+}
+
+#itemTitle .itemImgWrap .itemImgWrap_margin {
+  margin: 50px 0;
+}
+
+#itemTitle .itemImgWrap img {
+  border-radius: 20px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .ItemDesc div,
+#itemTitle .itemImgWrap .Imgbox .ItemDesc p {
+  margin-bottom: 5px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .ItemDesc .productName {
+  font-weight: 700;
+}
+
+#itemTitle .itemImgWrap .Imgbox .starNum span {
+  margin-bottom: 8px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .starNum span {
+  width: 50px;
+  height: 50px;
+  /* background-color: rgb(255, 255, 125); */
+  background: center / contain no-repeat url(../img/star.png);
+}
+
+#itemTitle .itemImgWrap .Imgbox img {
+  margin-bottom: 20px;
+  width: 100%;
+  /* object-fit: cover; */
+  /* transform: scale(1.0); */
+  transition: .5s;
+}
+
+
+#itemTitle .itemImgWrap .Imgbox .desc {
+  font-size: 20px;
+}
+
+#itemTitle .itemImgWrap button {
+  margin: 0 auto;
+  background-color: #FFDF80;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+
+/* itemTitle hover */
+
+/* #itemTitle .itemImgWrap .Imgbox a:hover img {
+  transform: scale(120%);
+} */
+
+/* footer */
+#fd {
+  background-color: #FFDF80;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#fd h2 {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+#fd h2 a {
+  margin: 0 auto;
+  width: 100px;
+  height: 88px;
+  background: center/contain no-repeat url(../img/sooldamhwa_logo_1627542258\ copy.svg);
+  display: block;
+}
+
+#fd .ftinfo .ftdesc p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#fd .ftinfo .ftinfoUrl {
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#fd .ftinfoUrl li {
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-color: #EAEAEA;
+  margin-right: 10px;
+}
+
+#fd .ftinfoUrl a {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+#fd .rightFtInfo {
+  width: 240px;
+}
+
+#fd .rightFtInfo span {
+  font-family: 'ImcreSoojin', sans-serif;
+  color: #5B97C9;
+  font-size: 25px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+#fd .rightFtInfo p {
+  margin: 0;
+  font-weight: 800;
+}
+
+#fd .rightFtInfo .sns {
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#fd .rightFtInfo .sns li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  /* background-color: #5B97C9; */
+  /* display: block; */
+
+}
+
+#fd .rightFtInfo .sns li i {
+  display: block;
+  font-size: 30px;
+  background-color: #EAEAEA;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #3395ED;
+}
+
+#fd .rightFtInfo .sns li:hover i {
+  background-color: #3395ED;
+  color: #FFDF80;
+}

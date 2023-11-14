@@ -4,20 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team</title>
+  <title>Team-SoolDamWha</title>
+  <!-- font -->
+  <link rel="stylesheet" href="./css/font.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2">
   <!-- CSS RESET -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <!-- ICON -->
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/main.css">
-
+  <link rel="stylesheet" href="./css/ssh.min.css">
+  <link rel="stylesheet" href="./css/se.css">
+  <link rel="stylesheet" href="./css/jy.css">
+  <link rel="stylesheet" href="./css/jr.css">
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- JS -->
   <script defer src="./js/jquery-v2.2.4.js"></script>
   <script defer src="./js/main.js"></script>
@@ -27,163 +40,623 @@
 <body>
 
   <header id="hd">
-    <div class="wrap bg-white border-bottom border-primary border-2 text-center">
-      <ul id="login" class="d-flex justify-content-end">
-        <li class="mx-3"><a href="">로그인</a></li>
-        <li class="mx-3"><a href="">회원가입</a></li>
-        <li class="mx-3"><a href="">한국어/영어</a></li>
-      </ul>
+    <div class="wrap bg-white text-center container-lg position-relative pt-5">
       <h1>
-        <a href="">
-          <img src="https://placehold.co/480x120/png" alt="">
+        <a href="#hd">
+          <img src="./img/hd_logo.png" alt="로고">
         </a>
       </h1>
-      <ul id="gnb" class="d-flex justify-content-around">
-        <li><a href="">구독</a></li>
-        <li><a href="">전체상품</a></li>
-        <li><a href="">베스트</a></li>
+      <ul id="gnb" class="d-flex justify-content-center">
+        <li><a href="#subscribeTitle">구독</a></li>
+        <li><a href="#itemTitle">전체상품</a></li>
+        <li><a href="#bestTitle">베스트</a></li>
         <li><a href="">이벤트</a></li>
         <li><a href="">Q & A</a></li>
+      </ul>
+      <ul id="login" class="d-flex justify-content-end position-absolute">
+        <li class="mx-3"><a href="#">로그인</a></li>
+        <li class="mx-3"><a href="#">회원가입</a></li>
+        <li class="mx-3"><a href="#">한국어/영어</a></li>
       </ul>
     </div>
   </header>
 
   <section id="promotion" class="mb-5">
-    <div class="swiper" id="promotionSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://placehold.co/2080x480/png" alt="">
+    <div id="promotionSwiper">
+      <div class="swiper position-relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bgimg1 ">
+            <div class="d-flex justify-content-start align-items-center container">
+              <div class="col-4 ms-5 ps-5 event1">첫 <br> 구매시 <br> 샘플 술 증정</div>
+            </div>
+
+
+          </div>
+          <div class="swiper-slide bgimg2">
+            <div class="container">
+              <div class="event2"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bgimg3">
+            <div class="d-flex justify-content-start align-items-center container">
+              <div class="col-4 ms-5 ps-5 event3">
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="https://placehold.co/2080x480/png" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="https://placehold.co/2080x480/png" alt="">
+        <div class="container-md d-none d-md-block position-absolute btnsCenter">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
   </section>
 
-  <main class="wrap">    
-    <section id="subscribeTitle" class="text-center mb-5">
-      <h2><a href="">구독타이틀</a></h2>
-      <ul class="d-flex justify-content-around">
-        <li>
-          <div>
-            <img class="rounded-circle" src="https://placehold.co/290x290/png" alt="">
-            <div>증류주 담화박스</div>
-          </div>
-        </li>
-        <li>
-          <div >
-            <img class="rounded-circle" src="https://placehold.co/290x290/png" alt="">
-            <div>증류주 담화박스</div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img class="rounded-circle" src="https://placehold.co/290x290/png" alt="">
-            <div>증류주 담화박스</div>
-          </div>
-        </li>        
-      </ul>
-      <button class="btn btn-outline-primary" >구독하기</button>
+  <main>
+    <section id="subscribe" class="wrap text-center mb-5">
+
+      <h2><a href="">구독, 아직도 망설이시나요?</a></h2>
+      <div class="subscribe-main-wrap d-flex justify-content-around">
+        <div class="subscribe-wrap">
+          <a href="">
+            <img class="rounded-circle" src="./img/subscribe/subscribe-1.jpg" alt="">
+            <div class="box-name">증류주 담화박스</div>
+            <div class="box-explain">증류주 담화박스에 대한 설명</div>
+          </a>          
+        </div>
+        <div class="subscribe-wrap">
+          <a href="" >
+            <img class="rounded-circle" src="./img/subscribe/subscribe-2.jpg" alt="">
+            <div class="box-name">종합 담화박스</div>
+            <div class="box-explain">종합 담화박스에 대한 설명</div>
+          </a>
+        </div>
+        <div class="subscribe-wrap">
+          <a href="">
+            <img class="rounded-circle" src="./img/subscribe/subscribe-3.jpg" alt="">
+            <div class="box-name">청주 담화박스</div>
+            <div class="box-explain">청주 담화박스에 대한 설명</div>
+          </a>
+        </div>
+      </div>
+      <button class="ssh--btn-apply">지금 신청하기</button>
+
+      
+      <div class="appdown"  data-aos="fade-right"  data-aos-anchor="#bestTitle">
+        <img src="./img/ETC/앱다운혜택.png" alt="">
+        <!-- test -->
+      </div>
+
     </section>
 
     <section id="bestTitle" class="text-center mb-5">
-      <h2><a href="">BEST 타이틀</a></h2>
-      <ul class="d-flex justify-content-around">
-        <li>
-          <img src="https://placehold.co/260x330/png" alt="">
-        </li>
-        <li>
-          <img src="https://placehold.co/260x330/png" alt="">
-        </li>
-        <li>
-          <img src="https://placehold.co/260x330/png" alt="">
-        </li>
-        <li>
-          <img src="https://placehold.co/260x330/png" alt="">
-        </li>
-      </ul>
-    </section>
+      <!-- <h2><a href="">BEST 타이틀</a></h2> -->
+      <div class="d-flex">
 
-    <section id="itemTitle" class="mb-5">
-      <h2 class="text-center"><a href="">상품타이틀</a></h2>
-      <ul class="d-flex justify-content-around">
-        <li><button class="btn btn-outline-primary">탁주</button></li>
-        <li><button class="btn btn-outline-primary">청주</button></li>
-        <li><button class="btn btn-outline-primary">과실주</button></li>
-        <li><button class="btn btn-outline-primary">증류주</button></li>
-        <li><button class="btn btn-outline-primary">술잔</button></li>
-      </ul>
-      <ul class="d-flex justify-content-between flex-wrap">
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-      </ul>
-      <ul class="d-flex justify-content-between flex-wrap">
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-        <li><img src="https://placehold.co/290x380/png" alt=""></li>
-      </ul>
-    </section> 
-    
-    <section id="review" class="mb-5">
-      <h2 class="text-center"><a href="">상품후기</a></h2>
-    <ul class="d-flex justify-content-around">
-      <li>
-        <img src="https://placehold.co/260x330/png" alt="">
-      </li>
-      <li>
-        <img src="https://placehold.co/260x330/png" alt="">
-      </li>
-      <li>
-        <img src="https://placehold.co/260x330/png" alt="">
-      </li>
-      <li>
-        <img src="https://placehold.co/260x330/png" alt="">
-      </li>
-    </ul>
-    </section>
-    
-    <section id="contact" class="w-50 mx-auto">
-      <h2 class="text-center">
-        <a href="">Contact</a>
-      </h2>
-      <form action="#" name="contact-info" method="post" class="container d-flex flex-column">
-        <label for="name">이름</label>
-        <input type="text" name="name" placeholder="이름" required>
-
-        <label for="email">이메일</label>
-        <input type="email" name="email" placeholder="example@example.com" required>
-
-        <label for="message">메시지</label>
-        <input type="text" name="message" placeholder="메세지입력^^" required>
-
-        <div class="d-flex justify-content-center">
-          <input type="submit" name="send-btn" value="보내기" class="btn btn-outline-primary m-2">
+        <div class="slide-box position-relative">
+          <h2 class="best-ment">슬고래들의<br>PICK !</h2>
+          <button class="ssh--btn-go-now">지금 바로 보러가기</button>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="slide-box-btns d-flex position-absolute">
+            <div class="swiper-button-prev">
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
+        
+        <div class="swiper">
+        
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/구름을 벗삼아.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/나루 생.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/담은 블랙.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/담은.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/대대포 블루.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/막쿠.jpg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="./img/탁주/보라 막걸리.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="itemTitle" class="mb80 mt80 wrap">
+      <h2 class="text-center"><a href="" class="text-decoration-none">지금 당장 술 담아보기</a></h2>
+      <ul class="d-flex justify-content-around itemTitleBox">
+        <li class="d-flex flex-md-column align-items-center">
+          <img src="./img/icon_only_sooldamhwa.png" alt="담화박스">
+          <div class="itemTitle">담화박스</div>
+        </li>
+        <li class="d-flex flex-md-column align-items-center">
+          <img src="./img/icon_cheongju.png" alt="담화박스">
+          <div class="itemTitle">청주</div>
+        </li>
+        <li class="d-flex flex-md-column align-items-center">
+          <img src="./img/icon_gwashilju.png" alt="담화박스">
+          <div class="itemTitle">과실주</div>
+        </li>
+        <li class="d-flex flex-md-column align-items-center">
+          <img src="./img/icon_jeungryuju.png" alt="담화박스">
+          <div class="itemTitle">증류주</div>
+        </li>
+        <li class="d-flex flex-md-column align-items-center">
+          <img src="./img/icon_takju.png" alt="담화박스">
+          <div class="itemTitle">탁주</div>
+        </li>
+        <li class="d-flex flex-md-column align-items-center">
+          <img src="./img/icon_merchandise.png" alt="담화박스">
+          <div class="itemTitle">술잔</div>
+        </li>
+      </ul>
+
+      <div class="itemImgWrap">
+        <div class="itemImgWrap_margin d-flex flex-wrap justify-content-between">
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/과실주/고도리 화이트 와인.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/과실주/샤인머스켓와인.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/증류주/겨울소주.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/청주/유자주.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/과실주/심쿵하리 사과.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/과실주/복숭아 와인.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/증류주/꿀샘.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+          <div class="Imgbox">
+            <a href="">
+              <img src="./img/탁주/대대포 블루.jpg" alt="">
+              <div class="ItemDesc">
+                <div class="productName fs-3">제품타이틀</div>
+                <div class="productPrice fs-2">12000원</div>
+                <div class="starNum d-flex justify-content-between">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="desc">이거 맛있어요 굳 강추</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button>더보기</button>
+      </div>
+
+    </section>
+
+    <section id="review" class="mb-5 wrap">
+      <h2 class="text-center"><a href="">상품후기</a></h2>
+      <div id="photoRvbox" class="d-flex justify-content-center align-content-center">
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/구름을 벗삼아.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star ali">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>re15님, 부모님도 많이 좋아하셨습니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/술 취한 원숭이.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>rfsdf님, 이거 진짜 존맛탱입니다ㅜ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/보라 막걸리.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/증류주/문배술.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>r854w님, bbbb 굿</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/증류주/원소주.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/과실주/자두와인.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>werjh님, 색도 맛도 정말 너무 좋아요!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/담은 블랙.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/청주/홍삼명주.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/증류주/겨울소주.jpg" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>rew님, 놀러갈 때 꼭 사고 갑니다~</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/설하담.png" alt="" id="ptrv">
+                <div>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex justify-content-between align-content-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                  <p>tdhff님, 정말 맛있게 잘 먹었습니다!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      </div>
+      
+    </section>
+
+    <section id="contact" class="w-50 mx-auto wrap">
+      <h2 class="text-center">
+        <a href="">입점문의</a>
+      </h2>
+
+      <div class="contactbox d-flex wrap">
+        <form action="#" name="contact-info" method="post" class="container d-flex">
+
+          <div class="d-flex flex-column">
+
+            <div class="him w-100">
+              <label for="name">이름</label>
+              <input type="text" name="name" placeholder="이름" required>
+            </div>
+
+            <div class="him w-100">
+              <label for="num">전화번호</label>
+              <input type="text" name="num" placeholder="010-0000-0000" required>
+            </div>
+
+            <div class="him w-100">
+              <label for="email">이메일</label>
+              <input type="email" name="email" placeholder="example@example.com" required>
+            </div>
+          </div>
+
+          <div class="him h-100 w-100" id="c-m">
+            <label for="message">메시지</label>
+            <textarea id="message" name="message" cols="23" rows="5" placeholder="메세지를 입력해주세요^^" required
+              style="background-color: transparent"></textarea>
+          </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <input type="submit" name="send-btn" value="보내기" class="sooldam-btn m-2">
+      </div>
+
+
       </form>
     </section>
 
   </main>
 
-  <footer id="fd" class="bg-secondary">
-    <h2><a href=""><img src="" alt=""></a></h2>
-    <div class="sns">
-      <ul class="d-flex justify-content-around">
-        <li>유튜브</li>
-        <li>트위티</li>
-        <li>인스타</li>
-        <li>페이스북</li>
-      </ul>
+  <footer id="fd">
+    <div class="wrap">
+      <h2><a href=""></a></h2>
+
+      <div class="fdinfoArea d-flex justify-content-between">
+        <div class="ftinfo">
+          <div class="ftdesc">
+            <p>대표 : OOO</p>
+            <p>사업자등록번호 : 000-00-00000</p>
+            <p>주소 : 서울특별시 서초구 강남대로 527, 10층(브랜드칸타워, 술담화)</p>
+            <p>대표 전화 : 070-1234-5678</p>
+            <p>이메일 : info@sooldamhwa.com </p>
+          </div>
+          <ul class="ftinfoUrl d-flex">
+            <li><a href="">개인정보 처리방침</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">입점문의</a></li>
+          </ul>
+        </div>
+        <div class="rightFtInfo">
+          <span>담화컴퍼니 주식회사</span>
+          <p>고객센터: 070-5014-1282</p>
+          <p>평일 10:00 - 18:00, 주말 휴무</p>
+          <ul class="sns d-flex justify-content-between">
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+            <li><a href=""><i class="bi bi-youtube"></i></a></li>
+            <li><a href=""><i class="bi bi-google"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+
   </footer>
 
 </body>

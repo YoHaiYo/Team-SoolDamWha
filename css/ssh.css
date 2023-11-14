@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;600&display=swap");
+@font-face {
+  font-family: "SOYOMapleBoldTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ImcreSoojin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.appdown {
+  position: absolute;
+  left: 37%;
+  top: 90%;
+  z-index: 9;
+}
+
+#subscribe h2 a {
+  font-family: "SOYOMapleBoldTTF";
+  font-size: 35px;
+}
+#subscribe .subscribe-main-wrap {
+  margin: 70px 0;
+}
+#subscribe .subscribe-main-wrap .subscribe-wrap a:hover img {
+  background-color: #333;
+  opacity: 0.5;
+}
+#subscribe .subscribe-main-wrap .subscribe-wrap a:hover .box-explain {
+  display: block;
+}
+#subscribe .subscribe-main-wrap .subscribe-wrap a img {
+  width: 290px;
+  height: 290px;
+}
+#subscribe .subscribe-main-wrap .subscribe-wrap a .box-name {
+  font-size: 30px;
+}
+#subscribe .subscribe-main-wrap .subscribe-wrap .box-explain {
+  display: none;
+  color: #000;
+  background-color: darkblue;
+  display: none;
+  margin-top: -200px;
+  color: #fff;
+}
+#subscribe .ssh--btn-apply {
+  background-color: #ffdf80;
+  font-family: "SOYOMapleBoldTTF";
+  font-size: 25px;
+  border-radius: 20px;
+  border: 0;
+  width: 215px;
+  height: 60px;
+}
+
+#bestTitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#bestTitle .slide-box {
+  width: 260px;
+  height: 330px;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 20px;
+}
+#bestTitle .slide-box .best-ment {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: "SOYOMapleBoldTTF";
+  font-size: 30px;
+}
+#bestTitle .slide-box .ssh--btn-go-now {
+  width: 160px;
+  height: 35px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: white;
+}
+#bestTitle .slide-box .slide-box-btns {
+  bottom: 67px;
+}
+#bestTitle .slide-box .slide-box-btns .swiper-button-prev {
+  position: unset;
+  margin-left: 30px;
+  margin-right: 50px;
+  color: rgb(128, 149, 255);
+}
+#bestTitle .slide-box .slide-box-btns .swiper-button-next {
+  position: unset;
+  color: rgba(0, 0, 0, 0.5490196078);
+}
+#bestTitle .slide-box .slide-box-btns .swiper-button-prev::after {
+  content: "←";
+}
+#bestTitle .slide-box .slide-box-btns .swiper-button-next::after {
+  content: "→";
+}
+#bestTitle .swiper {
+  width: 1700px;
+}
+#bestTitle .swiper .swiper-wrapper .swiper-slide a img {
+  width: 260px;
+  height: 330px;
+  border-radius: 20px;
+}
