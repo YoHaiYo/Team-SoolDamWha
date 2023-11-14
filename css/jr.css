@@ -3,6 +3,9 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+#contact h2 {
+margin-bottom: 30px;
+}
 
 #contact .contactbox {
   display: inline-block;
@@ -68,6 +71,15 @@
 }
 
 /* 리뷰 */
+#review {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#review h2 {
+  margin-bottom: 60px;
+}
+
 #review .rv-star .starNum span {
   margin-bottom: 10px;
 }
@@ -79,11 +91,7 @@
   background: center / contain no-repeat url(../img/star.png);
 }
 
-#review {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
+
 
 #review #photoRvbox .swiper-slide {
   border-radius: 30px;
