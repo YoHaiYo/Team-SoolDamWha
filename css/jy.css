@@ -85,22 +85,40 @@ a {
   margin: 50px 0;
 }
 
+/* Imgbox .ItemDesc */
+#itemTitle .itemImgWrap .Imgbox .ItemDesc {
+  text-align: center;
+}
+
 #itemTitle .itemImgWrap .Imgbox .ItemDesc div,
 #itemTitle .itemImgWrap .Imgbox .ItemDesc p {
   margin-bottom: 5px;
+
+}
+
+#itemTitle .itemImgWrap .Imgbox .ItemDesc .PriceBox {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #itemTitle .itemImgWrap .Imgbox .ItemDesc .productName {
   font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .starNum {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
 #itemTitle .itemImgWrap .Imgbox .starNum span {
+  justify-content: center;
   margin-bottom: 8px;
-}
-
-#itemTitle .itemImgWrap .Imgbox .starNum span {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   /* background-color: rgb(255, 255, 125); */
   background: center / contain no-repeat url(../img/star.png);
 }
@@ -115,7 +133,12 @@ a {
 
 
 #itemTitle .itemImgWrap .Imgbox .desc {
-  font-size: 20px;
+  font-size: 15px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .productPrice {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 #itemTitle .itemImgWrap button {
@@ -131,7 +154,7 @@ a {
 
 /* itemTitle hover */
 
-#itemTitle .itemImgWrap .Imgbox a {
+#itemTitle .itemImgWrap .Imgbox span {
   overflow: hidden;
   width: 290px;
   height: 380px;
