@@ -70,7 +70,8 @@
   align-items: center;
   border-radius: 0 0 1rem 1rem;
 }
-#subscribe #popup .popup-btn .oneday-close, #subscribe #popup .popup-btn .close {
+#subscribe #popup .popup-btn .oneday-close,
+#subscribe #popup .popup-btn .close {
   display: inline-block;
   width: 50%;
   line-height: 3;
@@ -136,7 +137,8 @@
 }
 #bestTitle .swiper .swiper-wrapper .swiper-slide:hover .pickbox {
   opacity: 1;
-  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
 }
 #bestTitle .swiper .swiper-wrapper .swiper-slide a {
   transition: 0.3s;
@@ -154,7 +156,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
 }
 #bestTitle .swiper .swiper-wrapper .swiper-slide .pickbox .picktitle {
   color: #fff;

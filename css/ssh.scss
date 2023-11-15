@@ -77,38 +77,44 @@
   }
 
   #popup {
-    position: absolute;    
+    position: absolute;
     top: 80%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9;
-    box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
-    -webkit-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
-    -moz-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
-    
+    box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+
     border-radius: 1rem;
+
     .popup-content {
       img {
         border-radius: 1rem 1rem 0 0;
       }
     }
+
     .popup-btn {
       // height: 48px;
       display: flex;
       justify-content: space-around;
       align-items: center;
       border-radius: 0 0 1rem 1rem;
-      .oneday-close, .close{
+
+      .oneday-close,
+      .close {
         display: inline-block;
         width: 50%;
         line-height: 3;
-        box-sizing: border-box;        
+        box-sizing: border-box;
         background-color: #fff;
       }
+
       .oneday-close {
         border: 1px solid #333;
         border-radius: 0 0 0 1rem;
       }
+
       .close {
         border-top: 1px solid #333;
         border-right: 1px solid #333;
@@ -179,16 +185,17 @@
 
     .swiper-wrapper {
       .swiper-slide {
-        &:hover {          
+        &:hover {
           .pickbox {
             opacity: 1;
-            transition: .3s;
+            transform: translate(-50%, -50%);
+            transition: .5s;
           }
         }
         a {
           transition: .3s;
           &:hover {
-              filter: brightness(50%);
+            filter: brightness(50%);
           }
           img {
             width: 260px;
@@ -201,13 +208,15 @@
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -20%);
+
           .picktitle {
             color: #fff;
             font-size: 30px;
             white-space: nowrap;
 
           }
+
           .hashtag {
             color: #fff;
             white-space: nowrap;
