@@ -46,7 +46,7 @@ const review = new Swiper('#photoRvbox .swiper', {
   loop: true,
   speed: 6000,
   centeredSlides: true,
-  slidesPerView: 4,
+  slidesPerView: 6,
   spaceBetween: 6,
   autoplay: {
     delay: 0,
