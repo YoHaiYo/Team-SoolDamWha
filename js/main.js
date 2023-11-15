@@ -5,7 +5,7 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 
   effect: "fade",
-  speed: 3000,
+  speed: 2000,
 
   centeredSlides: true,
 

@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-content: center;
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
   transform: translateY(50%);
 }
 
@@ -58,6 +58,7 @@
 #hd a {
   text-decoration: none;
 }
+
 
 #promotionSwiper .bgimg1 {
   background-image: url(../img/bgimg_1.png);
@@ -93,9 +94,15 @@
 
 }
 
+#promotionSwiper .bgimg3 .effecttext {
+  color: white;
+
+}
+
 #promotionSwiper .swiper-button-prev::after,
 #promotionSwiper .swiper-button-next::after {
   color: #4B77E7;
+  margin-top: 1.5rem;
 }
 
 #promotionSwiper .btnsCenter {
