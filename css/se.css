@@ -113,7 +113,7 @@
 #promotionSwiper .swiper-button-prev::after,
 #promotionSwiper .swiper-button-next::after {
   color: #4B77E7;
-  margin-top: 1.5rem;
+  margin-top: 10rem;
 }
 
 #promotionSwiper .btnsCenter {
@@ -147,6 +147,7 @@
   font-weight: bold;
   /* width: 486px;
   height: 45px; */
+  margin-bottom: 30px;
 
 
 }
