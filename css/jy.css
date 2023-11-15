@@ -78,7 +78,8 @@ a {
 
 #itemTitle .itemImgWrap .Imgbox {
   width: 290px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin: 0 15px 50px;
 }
 
 #itemTitle .itemImgWrap .itemImgWrap_margin {
@@ -253,4 +254,20 @@ a {
 #fd .rightFtInfo .sns li:hover i {
   background-color: #3395ED;
   color: #FFDF80;
+}
+
+@media(max-width:1200px) {
+
+  #itemTitle .itemTitleBox li {
+    margin: 0;
+  }
+
+  #itemTitle .itemTitleBox img {
+    width: 50px;
+  }
+
+  #itemTitle .itemImgWrap>div {
+    width: 100%;
+    justify-content: center;
+  }
 }
