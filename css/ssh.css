@@ -52,8 +52,9 @@
 }
 #subscribe #popup {
   position: absolute;
-  left: 37%;
-  top: 90%;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9;
   border-radius: 1rem;
 }
