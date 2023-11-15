@@ -15,22 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;600&display=swap');
 
 
-.appdown {
-  // display: none;
-  position: absolute;
-  // float: left;
-  left: 37%;
-  top: 90%;
-  
-  // transform: translate(-50%, 0%);
-  // top: 20%;
-  // left: 40%;
-  // width: 400px;
-  // height: 300px;
-  // border: 1px solid #333;
-  // background-color: #fff;
-  z-index: 9;
-}
+
 
 // MAIN
 #subscribe {
@@ -89,6 +74,44 @@
     border: 0;
     width: 215px;
     height: 60px;
+  }
+
+  #popup {
+    position: absolute;
+    left: 37%;
+    top: 90%;        
+    z-index: 9;
+    
+    border-radius: 1rem;
+    .popup-content {
+      img {
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+    .popup-btn {
+      // height: 48px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
+      -webkit-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
+      -moz-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
+      border-radius: 0 0 1rem 1rem;
+      .oneday-close, .close{
+        display: inline-block;
+        width: 50%;
+        line-height: 3;
+        border: 1px solid #333;
+        box-sizing: border-box;        
+        background-color: #fff;
+      }
+      .oneday-close {
+        border-radius: 0 0 0 1rem;
+      }
+      .close {
+        border-radius: 0 0 1rem 0;
+      }
+    }
   }
 }
 

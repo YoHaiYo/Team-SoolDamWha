@@ -12,13 +12,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.appdown {
-  position: absolute;
-  left: 37%;
-  top: 90%;
-  z-index: 9;
-}
-
 #subscribe h2 a {
   font-family: "SOYOMapleBoldTTF";
   font-size: 35px;
@@ -56,6 +49,39 @@
   border: 0;
   width: 215px;
   height: 60px;
+}
+#subscribe #popup {
+  position: absolute;
+  left: 37%;
+  top: 90%;
+  z-index: 9;
+  border-radius: 1rem;
+}
+#subscribe #popup .popup-content img {
+  border-radius: 1rem 1rem 0 0;
+}
+#subscribe #popup .popup-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+  border-radius: 0 0 1rem 1rem;
+}
+#subscribe #popup .popup-btn .oneday-close, #subscribe #popup .popup-btn .close {
+  display: inline-block;
+  width: 50%;
+  line-height: 3;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#subscribe #popup .popup-btn .oneday-close {
+  border-radius: 0 0 0 1rem;
+}
+#subscribe #popup .popup-btn .close {
+  border-radius: 0 0 1rem 0;
 }
 
 #bestTitle {
