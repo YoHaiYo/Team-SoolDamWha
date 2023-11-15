@@ -56,6 +56,9 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 9;
+  box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
   border-radius: 1rem;
 }
 #subscribe #popup .popup-content img {
@@ -65,23 +68,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
-  -webkit-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
   border-radius: 0 0 1rem 1rem;
 }
 #subscribe #popup .popup-btn .oneday-close, #subscribe #popup .popup-btn .close {
   display: inline-block;
   width: 50%;
   line-height: 3;
-  border: 1px solid #333;
   box-sizing: border-box;
   background-color: #fff;
 }
 #subscribe #popup .popup-btn .oneday-close {
+  border: 1px solid #333;
   border-radius: 0 0 0 1rem;
 }
 #subscribe #popup .popup-btn .close {
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
   border-radius: 0 0 1rem 0;
 }
 

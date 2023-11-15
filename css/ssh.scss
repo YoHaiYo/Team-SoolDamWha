@@ -82,6 +82,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 9;
+    box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
+    -moz-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
     
     border-radius: 1rem;
     .popup-content {
@@ -94,22 +97,22 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
-      -webkit-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
-      -moz-box-shadow: 5px 4px 27px -4px rgba(0,0,0,0.57);
       border-radius: 0 0 1rem 1rem;
       .oneday-close, .close{
         display: inline-block;
         width: 50%;
         line-height: 3;
-        border: 1px solid #333;
         box-sizing: border-box;        
         background-color: #fff;
       }
       .oneday-close {
+        border: 1px solid #333;
         border-radius: 0 0 0 1rem;
       }
       .close {
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
         border-radius: 0 0 1rem 0;
       }
     }
