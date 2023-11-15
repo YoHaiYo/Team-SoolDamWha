@@ -3,8 +3,9 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+
 #contact h2 {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #contact .contactbox {
@@ -66,39 +67,44 @@ margin-bottom: 30px;
 #contact input {
   color: #868282;
 }
-#contact #send input{
+
+#contact #send input {
   color: #333;
 }
+
 #contact input::placeholder {
   color: #868282;
 }
 
 /* 리뷰 */
+
+#review .swiper-wrapper {
+  transition-timing-function: linear;
+}
 #review {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
 }
+
 #review h2 {
   margin-bottom: 45px;
 }
 
-#review .rv-star .starNum span {
-  margin-bottom: 10px;
-}
 
 #review .rv-star .starNum span {
-  width: 30px;
-  height: 30px;
-  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 20px;
+  height: 45px;
+  display: flex;
   background: center / contain no-repeat url(../img/star.png);
 }
 
-
-
 #review #photoRvbox .swiper-slide {
   border-radius: 30px;
-
+  border: #333;
+  width: auto;
 }
 
 #review #photoRvbox .swiper-slide img {
@@ -109,28 +115,25 @@ margin-bottom: 30px;
 
 
 #review .swiper-slide .rv-star {
-  padding: 1rem 4rem;
-  margin: 0;
+  align-items: center;
 }
 
 
 #review .swiper-slide p {
   font-size: 14px;
-    text-align: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 30px;
 }
 
 #review .swiper-slide #face {
-  justify-content: center;
   text-align: center;
 }
-#review .swiper-slide #face a img{
+
+
+#review .swiper-slide #face img {
   width: 50px;
   height: 50px;
+  bottom: 0;
   margin-bottom: 0;
-  padding: 0;
-}
-
-#review .swiper-slide #face p {
-  /* margin-top: 50px; */
-  text-align: left;
 }

@@ -48,10 +48,10 @@ const review = new Swiper('#photoRvbox .swiper', {
   centeredSlides: true,
   slidesPerView: 4,
   spaceBetween: 6,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false
-  // },
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false
+  },
   pagination: {
     el: '#photoRvbox .swiper-pagination',
     clickable: true,
