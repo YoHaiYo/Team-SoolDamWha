@@ -5,7 +5,7 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 
   effect: "fade",
-  speed: 2000,
+  speed: 3000,
 
   centeredSlides: true,
 
@@ -16,7 +16,7 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
     prevEl: '#promotionSwiper .swiper-button-prev',
   },
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false
   },
 
@@ -31,7 +31,7 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
   spaceBetween: 30,
   slidesPerView: 5.5,
   loop: false,
-  
+
   direction: 'horizontal',
   pagination: {
     el: '#bestTitle .swiper-pagination',
@@ -62,7 +62,7 @@ const review = new Swiper('#photoRvbox .swiper', {
 
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
 const spyEls = document.querySelectorAll('.scroll-spy')
-spyEls.forEach(function(spyEl) {
+spyEls.forEach(function (spyEl) {
   new ScrollMagic
     .Scene({
       triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
