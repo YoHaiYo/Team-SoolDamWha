@@ -116,4 +116,21 @@ margin-bottom: 30px;
 
 #review .swiper-slide p {
   font-size: 14px;
+    text-align: center;
+}
+
+#review .swiper-slide #face {
+  justify-content: center;
+  text-align: center;
+}
+#review .swiper-slide #face a img{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#review .swiper-slide #face p {
+  /* margin-top: 50px; */
+  text-align: left;
 }

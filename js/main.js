@@ -44,20 +44,18 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
 
 const review = new Swiper('#photoRvbox .swiper', {
   loop: true,
+  speed: 6000,
   centeredSlides: true,
   slidesPerView: 4,
-  centeredSlides: true,
   spaceBetween: 6,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false
+  // },
   pagination: {
     el: '#photoRvbox .swiper-pagination',
     clickable: true,
   },
-
-
 });
 
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
