@@ -24,10 +24,10 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 });
 
 const bestSwiper = new Swiper('#bestTitle .swiper', {
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
   spaceBetween: 30,
   slidesPerView: 5.5,
   loop: false,

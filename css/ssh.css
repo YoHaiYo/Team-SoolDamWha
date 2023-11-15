@@ -134,8 +134,34 @@
 #bestTitle .swiper {
   width: 1700px;
 }
+#bestTitle .swiper .swiper-wrapper .swiper-slide:hover .pickbox {
+  opacity: 1;
+  transition: 0.3s;
+}
+#bestTitle .swiper .swiper-wrapper .swiper-slide a {
+  transition: 0.3s;
+}
+#bestTitle .swiper .swiper-wrapper .swiper-slide a:hover {
+  filter: brightness(50%);
+}
 #bestTitle .swiper .swiper-wrapper .swiper-slide a img {
   width: 260px;
   height: 330px;
   border-radius: 20px;
+}
+#bestTitle .swiper .swiper-wrapper .swiper-slide .pickbox {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#bestTitle .swiper .swiper-wrapper .swiper-slide .pickbox .picktitle {
+  color: #fff;
+  font-size: 30px;
+  white-space: nowrap;
+}
+#bestTitle .swiper .swiper-wrapper .swiper-slide .pickbox .hashtag {
+  color: #fff;
+  white-space: nowrap;
 }
