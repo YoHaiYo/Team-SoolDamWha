@@ -23,6 +23,17 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
 const bestSwiper = new Swiper('#bestTitle .swiper', {
   autoplay: {
     delay: 4000,
