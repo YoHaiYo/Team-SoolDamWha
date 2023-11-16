@@ -28,8 +28,8 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
     delay: 4000,
     disableOnInteraction: false,
   },
-  spaceBetween: 30,
-  slidesPerView: 5.5,
+  spaceBetween: 10,
+  slidesPerView: 1.5,
   loop: false,
   
   direction: 'horizontal',
@@ -39,7 +39,24 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
   navigation: {
     nextEl: '#bestTitle .swiper-button-next',
     prevEl: '#bestTitle .swiper-button-prev',
-  }
+  },
+  breakpoints: {
+    // 535: {
+    //   slidesPerView: 1.5,
+    // },
+    735: {
+      slidesPerView: 2.5,
+    },
+    1035: {
+      slidesPerView: 3.5,
+    },
+    1335: {
+      slidesPerView: 4.5,
+    },
+    1665: {
+      slidesPerView: 5.5,
+    },
+  },
 });
 
 const review = new Swiper('#photoRvbox .swiper', {

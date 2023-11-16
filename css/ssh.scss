@@ -1,20 +1,20 @@
-@font-face {
-  font-family: 'SOYOMapleBoldTTF';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'SOYOMapleBoldTTF';
+//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+//   font-weight: 700;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'ImcreSoojin';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'ImcreSoojin';
+//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;600&display=swap');
 
-
+@import url('./font.css');
 
 
 // MAIN
@@ -35,12 +35,14 @@
       a {
         &:hover {
           img {
-            background-color: #333;
-            opacity: .5;
+            // background-color: #333;
+            // opacity: .5;
+            // filter: brightness(50%);
           }
 
           .box-explain {
-            display: block;
+            // display: block;
+            // opacity: 1;
           }
         }
 
@@ -51,17 +53,17 @@
 
         .box-name {
           font-size: 30px;
+          font-family: 'ImcreSoojin';
         }
       }
 
       .box-explain {
-        display: none;
-        // opacity: 0;
-        color: #000;
-        background-color: darkblue;
-        display: none;
-        margin-top: -200px;
+        // display: none;
+        opacity: 0;
         color: #fff;
+        background-color: darkblue;
+        margin-top: -200px;
+        // z-index: 9;
       }
     }
   }
@@ -181,10 +183,11 @@
 
   .swiper {
     width: 1700px;
+    padding: 2rem 0;
     // border: 1px solid #333;
 
     .swiper-wrapper {
-      .swiper-slide {
+      .swiper-slide {        
         &:hover {
           .pickbox {
             opacity: 1;
@@ -201,6 +204,9 @@
             width: 260px;
             height: 330px;
             border-radius: 20px;
+            box-shadow: 8px 6px 17px -7px rgba(0,0,0,0.52);
+            -webkit-box-shadow: 8px 6px 17px -7px rgba(0,0,0,0.52);
+            -moz-box-shadow: 8px 6px 17px -7px rgba(0,0,0,0.52);
           }
         }
         .pickbox {
@@ -225,6 +231,11 @@
       }
     }
   }
+}
 
-
+// 반응형
+@media (max-width: 535px) { 
+  #bestTitle .slide-box {
+    display: none !important;   
+  }
 }
