@@ -34,7 +34,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() > 80) {
       // $("#hd h1").css("display", "none");
-      $("#hd img").attr("src", "./img/hd_smlogo.png");
+      $("#hd img").attr("src", "./img/main-logo.png");
 
       x;
 
