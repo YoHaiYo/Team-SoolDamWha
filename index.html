@@ -30,6 +30,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
     integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -50,8 +52,8 @@
       </h1>
       <ul id="gnb" class="d-flex justify-content-center">
         <li><a href="#">구독</a></li>
-        <li><a href="#itemTitle">전체상품</a></li>
-        <li><a href="#bestTitle">베스트</a></li>
+        <li><a href="#itemTitle" class="scrolla">전체상품</a></li>
+        <li><a href="#bestTitle" class="scrolla">베스트</a></li>
         <li><a href="">이벤트</a></li>
         <li><a href="">Q & A</a></li>
       </ul>
@@ -131,7 +133,7 @@
 
     </section>
 
-    <section id="bestTitle" class="text-center mb-5">
+    <section id="bestTitle" class="text-center mb-5 scrolla">
       <!-- <h2><a href="">BEST 타이틀</a></h2> -->
       <div class="d-flex">
 
@@ -190,7 +192,7 @@
 
     </section>
 
-    <section id="itemTitle" class="mb80 mt80 wrap">
+    <section id="itemTitle" class="mb80 mt80 wrap scrolla">
       <h2 class="text-center"><a href="" class="text-decoration-none">지금 당장 술 담아보기</a></h2>
       <ul class="d-flex justify-content-around itemTitleBox">
         <li class="d-flex flex-md-column align-items-center">

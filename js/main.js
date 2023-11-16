@@ -25,6 +25,15 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 
 
+// $("#topbtn").click(function (x) {
+//     x.preventDefault();
+//     targetnm = "body";
+//     $("body, html").stop(true, true).animate({ scrollTop: $(targernm).offset().top })
+// })
+
+
+
+
 
 
 
