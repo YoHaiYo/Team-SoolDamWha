@@ -80,29 +80,38 @@ AOS.init({
 
 // 메뉴 클릭시 바뀌는
 
+// $(function () {
+
+//   $("#itemTitle .itemTitleBox .menu-1").click(function () {
+//     $("#itemTitle .itemImgWrap").removeClass("on")
+//     $("#itemTitle .damhwa").addClass("on")
+//   })
+
+//   $("#itemTitle .itemTitleBox .menu-2").click(function () {
+//     $("#itemTitle .itemImgWrap").removeClass("on")
+//     $("#itemTitle .gwashilju").addClass("on")
+//   })
+
+
+
+//   // $("#itemTitle .itemTitleBox > li").click(function () {
+//   //   if ($(this).index(0)) {
+//   //     $("#itemTitle .damhwa").addClass("on")
+//   //   } else if ($(this).index(1)) {
+//   //     $("#itemTitle .gwashilju").addClass("on")
+//   //   }
+
+
+
+//   //   console.log($(this).index())
+//   // })
+// })
+
 $(function () {
-
-  $("#itemTitle .itemTitleBox .menu-1").click(function () {
-    $("#itemTitle .itemImgWrap").removeClass("on")
-    $("#itemTitle .damhwa").addClass("on")
+  let menufilter = "";
+  $("#itemTitle .itemTitleBox li").click(function () {
+    menufilter = $(this).data("filter");
+    $("#itemTitle .Imgbox").hide()
+    $(menufilter).show()
   })
-
-  $("#itemTitle .itemTitleBox .menu-2").click(function () {
-    $("#itemTitle .itemImgWrap").removeClass("on")
-    $("#itemTitle .gwashilju").addClass("on")
-  })
-
-
-
-  // $("#itemTitle .itemTitleBox > li").click(function () {
-  //   if ($(this).index(0)) {
-  //     $("#itemTitle .damhwa").addClass("on")
-  //   } else if ($(this).index(1)) {
-  //     $("#itemTitle .gwashilju").addClass("on")
-  //   }
-
-
-
-  //   console.log($(this).index())
-  // })
 })

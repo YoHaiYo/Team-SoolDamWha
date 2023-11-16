@@ -274,10 +274,10 @@ a {
 
 /* 메뉴클릭 on */
 
-#itemTitle .itemImgWrap {
+/* #itemTitle .itemImgWrap {
   display: none;
 }
 
 #itemTitle .itemImgWrap.on {
   display: block !important;
-}
+} */
