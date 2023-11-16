@@ -78,33 +78,47 @@ a {
 
 #itemTitle .itemImgWrap .Imgbox {
   width: 290px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin: 0 15px 50px;
 }
 
 #itemTitle .itemImgWrap .itemImgWrap_margin {
   margin: 50px 0;
 }
 
-#itemTitle .itemImgWrap img {
-  border-radius: 20px;
+/* Imgbox .ItemDesc */
+#itemTitle .itemImgWrap .Imgbox .ItemDesc {
+  text-align: center;
 }
 
 #itemTitle .itemImgWrap .Imgbox .ItemDesc div,
 #itemTitle .itemImgWrap .Imgbox .ItemDesc p {
   margin-bottom: 5px;
+
+}
+
+#itemTitle .itemImgWrap .Imgbox .ItemDesc .PriceBox {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #itemTitle .itemImgWrap .Imgbox .ItemDesc .productName {
   font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .starNum {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
 #itemTitle .itemImgWrap .Imgbox .starNum span {
   margin-bottom: 8px;
-}
-
-#itemTitle .itemImgWrap .Imgbox .starNum span {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   /* background-color: rgb(255, 255, 125); */
   background: center / contain no-repeat url(../img/star.png);
 }
@@ -119,7 +133,12 @@ a {
 
 
 #itemTitle .itemImgWrap .Imgbox .desc {
-  font-size: 20px;
+  font-size: 15px;
+}
+
+#itemTitle .itemImgWrap .Imgbox .productPrice {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 #itemTitle .itemImgWrap button {
@@ -135,9 +154,17 @@ a {
 
 /* itemTitle hover */
 
-/* #itemTitle .itemImgWrap .Imgbox a:hover img {
-  transform: scale(120%);
-} */
+#itemTitle .itemImgWrap .Imgbox span {
+  overflow: hidden;
+  width: 290px;
+  height: 380px;
+  display: block;
+  border-radius: 20px;
+}
+
+#itemTitle .itemImgWrap .Imgbox img:hover {
+  transform: scale(1.3);
+}
 
 /* footer */
 #fd {
@@ -226,4 +253,28 @@ a {
 #fd .rightFtInfo .sns li:hover i {
   background-color: #3395ED;
   color: #FFDF80;
+}
+
+@media(max-width:1200px) {
+
+  #itemTitle .itemTitleBox li {
+    margin: 0;
+  }
+
+  #itemTitle .itemTitleBox img {
+    width: 50px;
+  }
+
+  #itemTitle .itemImgWrap>div {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 선택된 메뉴만 보이기 */
+#itemTitle .itemImgWrap_margin.selected {
+  display: inline-flex !important;
+}
+#itemTitle .itemImgWrap_margin {
+  display: none !important;
 }

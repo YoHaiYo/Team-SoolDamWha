@@ -94,3 +94,17 @@ AOS.init({
   duration: 600,
 })
 
+
+// 베스트 타이틀 선택시 메뉴 나오게
+$(document).ready(function(){
+  // console.log('hi')
+  $('#itemTitle .menu-btn-1').click(function(){
+    $('#itemTitle .itemImgWrap_margin').removeClass('selected')
+    $('#itemTitle .menu-1').addClass('selected')
+  })
+  $('#itemTitle .menu-btn-2').click(function(){
+    $('#itemTitle .itemImgWrap_margin').removeClass('selected')
+    
+    $('#itemTitle .menu-2').addClass('selected')
+  })
+})
