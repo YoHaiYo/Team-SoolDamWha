@@ -35,11 +35,13 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 80) {
       // $("#hd h1").css("display", "none");
       $("#hd img").attr("src", "./img/hd_smlogo.png");
+
       x;
 
     } else {
       // $("#hd h1").css("display", "block");
       $("#hd img").attr("src", "./img/hd_logo.png");
+
       x;
     }
   })
