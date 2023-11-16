@@ -31,7 +31,7 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
   spaceBetween: 30,
   slidesPerView: 5.5,
   loop: false,
-  
+
   direction: 'horizontal',
   pagination: {
     el: '#bestTitle .swiper-pagination',
@@ -62,7 +62,7 @@ const review = new Swiper('#photoRvbox .swiper', {
 
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
 const spyEls = document.querySelectorAll('.scroll-spy')
-spyEls.forEach(function(spyEl) {
+spyEls.forEach(function (spyEl) {
   new ScrollMagic
     .Scene({
       triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
@@ -77,3 +77,32 @@ AOS.init({
   duration: 600,
 })
 
+
+// 메뉴 클릭시 바뀌는
+
+$(function () {
+
+  $("#itemTitle .itemTitleBox .menu-1").click(function () {
+    $("#itemTitle .itemImgWrap").removeClass("on")
+    $("#itemTitle .damhwa").addClass("on")
+  })
+
+  $("#itemTitle .itemTitleBox .menu-2").click(function () {
+    $("#itemTitle .itemImgWrap").removeClass("on")
+    $("#itemTitle .gwashilju").addClass("on")
+  })
+
+
+
+  // $("#itemTitle .itemTitleBox > li").click(function () {
+  //   if ($(this).index(0)) {
+  //     $("#itemTitle .damhwa").addClass("on")
+  //   } else if ($(this).index(1)) {
+  //     $("#itemTitle .gwashilju").addClass("on")
+  //   }
+
+
+
+  //   console.log($(this).index())
+  // })
+})
