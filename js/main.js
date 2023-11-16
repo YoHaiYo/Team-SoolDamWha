@@ -23,6 +23,28 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 });
 
+var x = topDom = $("#hd").height();
+$("#promotion").css("padding-top", topDom);
+$(document).ready(function () {
+  x;
+  $(window).resize(function () {
+    x;
+  })
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 80) {
+      // $("#hd h1").css("display", "none");
+      $("#hd img").attr("src", "./img/hd_smlogo.png");
+      x;
+
+    } else {
+      // $("#hd h1").css("display", "block");
+      $("#hd img").attr("src", "./img/hd_logo.png");
+      x;
+    }
+  })
+
+})
 
 
 // $("#topbtn").click(function (x) {
@@ -96,4 +118,6 @@ spyEls.forEach(function (spyEl) {
 AOS.init({
   duration: 600,
 })
+
+
 
