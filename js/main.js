@@ -88,19 +88,11 @@ $(function () {
 
   $("#itemTitle .itemTitleBox li").click(function () {
 
-
     menufilter = $(this).data("filter");
     $("#itemTitle .Imgbox").hide()
     $(menufilter).show()
 
-    // $("#itemTitle .itemTitle").css("color", $("#itemTitle .itemTitle").data("color"))
-    // $("#itemTitle .itemTitle").addClass("on")
-  })
-
-
-  $("#itemTitle .itemTitle").click(function () {
-    $(this).addClass("on").parents().siblings().find("div").removeClass("on")
-
+    $(this).addClass("on").siblings().removeClass("on")
   })
 
 })

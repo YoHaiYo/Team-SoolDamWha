@@ -274,6 +274,6 @@ a {
 
 /* 메뉴클릭 on */
 
-#itemTitle .itemTitleBox .itemTitle.on {
+#itemTitle .menu.on .itemTitle {
   color: #3395ED;
 }
