@@ -274,10 +274,6 @@ a {
 
 /* 메뉴클릭 on */
 
-/* #itemTitle .itemImgWrap {
-  display: none;
+#itemTitle .itemTitleBox .itemTitle.on {
+  color: #3395ED;
 }
-
-#itemTitle .itemImgWrap.on {
-  display: block !important;
-} */
