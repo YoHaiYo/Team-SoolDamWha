@@ -93,6 +93,7 @@ $(function () {
     $("#itemTitle .Imgbox").hide()
     $(menufilter).show()
 
+    // $("#itemTitle .itemTitle").css("color", $("#itemTitle .itemTitle").data("color"))
     // $("#itemTitle .itemTitle").addClass("on")
   })
 
@@ -101,9 +102,5 @@ $(function () {
     $(this).addClass("on").parents().siblings().find("div").removeClass("on")
 
   })
-
-})
-
-$(function () {
 
 })
