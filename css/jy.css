@@ -163,7 +163,7 @@ a {
 }
 
 #itemTitle .itemImgWrap .Imgbox img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 /* footer */
@@ -271,10 +271,9 @@ a {
   }
 }
 
-/* 선택된 메뉴만 보이기 */
-#itemTitle .itemImgWrap_margin.selected {
-  display: inline-flex !important;
-}
-#itemTitle .itemImgWrap_margin {
-  display: none !important;
+
+/* 메뉴클릭 on */
+
+#itemTitle .itemTitleBox .itemTitle.on {
+  color: #3395ED;
 }

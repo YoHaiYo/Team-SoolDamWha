@@ -16,12 +16,41 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
     prevEl: '#promotionSwiper .swiper-button-prev',
   },
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false
   },
 
 
 });
+
+var x = topDom = $("#hd").height();
+$("#promotion").css("padding-top", topDom);
+$(document).ready(function () {
+  x;
+  $(window).resize(function () {
+    x;
+  })
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 80) {
+      // $("#hd h1").css("display", "none");
+      $("#hd img").attr("src", "./img/main-logo.png");
+      $("#hd").addClass('down')
+
+
+
+      x;
+
+    } else {
+      // $("#hd h1").css("display", "block");
+      $("#hd img").attr("src", "./img/hd_logo.png");
+      $("#hd").removeClass('down')
+
+      x;
+    }
+  })
+
+})
 
 const bestSwiper = new Swiper('#bestTitle .swiper', {
   autoplay: {
@@ -59,22 +88,21 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
   },
 });
 
+
 const review = new Swiper('#photoRvbox .swiper', {
   loop: true,
+  speed: 6000,
   centeredSlides: true,
-  slidesPerView: 4,
-  centeredSlides: true,
-  spaceBetween: 6,
+  slidesPerView: 7,
+  spaceBetween: 8,
   autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+    delay: 0,
+    disableOnInteraction: false
   },
   pagination: {
     el: '#photoRvbox .swiper-pagination',
     clickable: true,
   },
-
-
 });
 
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
@@ -95,16 +123,28 @@ AOS.init({
 })
 
 
-// 베스트 타이틀 선택시 메뉴 나오게
-$(document).ready(function(){
-  // console.log('hi')
-  $('#itemTitle .menu-btn-1').click(function(){
-    $('#itemTitle .itemImgWrap_margin').removeClass('selected')
-    $('#itemTitle .menu-1').addClass('selected')
+// 메뉴 클릭시 바뀌는
+
+$(function () {
+  $("#itemTitle .Imgbox").hide()
+  $('#itemTitle .set').show()
+
+  let menufilter = "";
+
+  $("#itemTitle .itemTitleBox li").click(function () {
+
+
+    menufilter = $(this).data("filter");
+    $("#itemTitle .Imgbox").hide()
+    $(menufilter).show()
+
+    // $("#itemTitle .itemTitle").addClass("on")
   })
-  $('#itemTitle .menu-btn-2').click(function(){
-    $('#itemTitle .itemImgWrap_margin').removeClass('selected')
-    
-    $('#itemTitle .menu-2').addClass('selected')
+
+
+  $("#itemTitle .itemTitle").click(function () {
+    $(this).addClass("on").parents().siblings().find("div").removeClass("on")
+
   })
+
 })
