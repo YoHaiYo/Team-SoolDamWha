@@ -49,6 +49,11 @@
         img {
           width: 290px;
           height: 290px;
+          transition: .5s;
+          &:hover {
+            transform: scale(1.03);
+            
+          }
         }
 
         .box-name {
