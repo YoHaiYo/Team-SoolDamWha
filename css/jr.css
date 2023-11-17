@@ -77,7 +77,7 @@
   color: #868282;
 }
 
-/* 리뷰 */
+/* --------------리뷰--------------- */
 
 #review .swiper-wrapper {
   transition-timing-function: linear;
@@ -105,14 +105,16 @@
 
 #review #photoRvbox .swiper-slide {
   border-radius: 30px;
-  border: #333;
+  border: 1px solid #333;
   width: auto;
 }
 
+
 #review #photoRvbox .swiper-slide img {
-  width: 249.8px;
+  width: 285px;
   height: 310px;
-  border-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 
