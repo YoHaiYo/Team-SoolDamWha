@@ -42,7 +42,7 @@
   position: absolute;
   max-width: 500px;
   width: 50vw;
-  right: 0;
+  right: 20%;
   margin: auto;
   top: 0;
   bottom: 0;
@@ -53,6 +53,7 @@
   opacity: 0;
   transition: 1s;
   transform: translateY(50%);
+
 }
 
 #promotionSwiper .swiper-slide.swiper-slide-active .effecttext {
@@ -155,5 +156,44 @@
 #gnb a {
   padding: 50px;
 }
+
+#hd.down h1 {
+  margin-bottom: 0;
+}
+
+#hd.down .wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+#hd.down #gnb a {
+  padding: 25px 50px;
+
+}
+
+#hd.down #gnb {
+  margin-bottom: 0;
+  margin-left: 9rem;
+}
+
+#hd.down h1 img {
+  height: 2rem;
+  margin-bottom: 1rem;
+  transform: translateX(-100%);
+}
+
+#hd.down {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#hd.down #login {
+  margin-top: 4rem;
+  transform: translateX(50%);
+}
+
+
+
+
 
 /* -------------------------------------------------header------------------------------------------------------------------ */

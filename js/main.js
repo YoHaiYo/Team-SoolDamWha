@@ -35,12 +35,16 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 80) {
       // $("#hd h1").css("display", "none");
       $("#hd img").attr("src", "./img/main-logo.png");
+      $("#hd").addClass('down')
+
+
 
       x;
 
     } else {
       // $("#hd h1").css("display", "block");
       $("#hd img").attr("src", "./img/hd_logo.png");
+      $("#hd").removeClass('down')
 
       x;
     }
@@ -50,9 +54,9 @@ $(document).ready(function () {
 
 
 // $("#topbtn").click(function (x) {
-//     x.preventDefault();
-//     targetnm = "body";
-//     $("body, html").stop(true, true).animate({ scrollTop: $(targernm).offset().top })
+//   x.preventDefault();
+//   targetnm = "body";
+//   $("body, html").stop(true, true).animate({ scrollTop: $(targernm).offset().top })
 // })
 
 
