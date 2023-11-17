@@ -106,13 +106,13 @@
 #review #photoRvbox .swiper-slide {
   border-radius: 30px;
   border: 1px solid #333;
-  width: auto;
+  /* width: auto; */
 }
 
 
 #review #photoRvbox .swiper-slide img {
-  width: 285px;
-  height: 310px;
+  width: 262.1px;
+  height: 300px;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
