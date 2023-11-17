@@ -1,21 +1,8 @@
-// @font-face {
-//   font-family: 'SOYOMapleBoldTTF';
-//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'ImcreSoojin';
-//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;600&display=swap');
-
 @import url('./font.css');
-
+// Common
+body {
+  overflow-x: hidden;
+}
 
 // MAIN
 #subscribe {
@@ -129,6 +116,15 @@
         border-radius: 0 0 1rem 0;
       }
     }
+  }
+  #cat {
+    position: absolute;
+    z-index: 9;
+    left: calc(100% - 200px);
+    img {
+      width: 200px;
+    }
+    
   }
 }
 
