@@ -1,3 +1,4 @@
+
 /// itemTitle 컨텐츠 관리
 const itemTitleContents = [
   {
@@ -193,50 +194,202 @@ const itemTitleContents = [
     desc: "맛있는 술은 오디있지?"
   },   
   {
-    categorydata: "",
-    img: "",
-    productName: "",
-    productPrice: "",
+    categorydata: "gwashilju",
+    img: "./img/과실주/자두와인.jpg",
+    productName: "고도리 자두와인",
+    productPrice: "25000원",
+    starNum: 5,
+    desc: "자두로 만든 와인"
+},
+{
+    categorydata: "gwashilju",
+    img: "./img/과실주/허니비 와인.jpg",
+    productName: "허니비 와인",
+    productPrice: "21000원",
+    starNum: 5,
+    desc: "아카시아꽃 꿀이 들어간"
+},
+{
+    categorydata: "gwashilju",
+    img: "./img/과실주/치키피치.jpg",
+    productName: "치키피치",
+    productPrice: "6600원",
+    starNum: 3,
+    desc: "복숭아 애플사이더"
+},
+{
+    categorydata: "jeungryuju",
+    img: "./img/증류주/감보드카.jpg",
+    productName: "감보드카",
+    productPrice: "12800원",
+    starNum:4,
+    desc: "가을 낙엽 닮은 달콤한 향을 지닌 감 보드카"
+},
+{
+    categorydata: "jeungryuju",
+    img: "./img/증류주/문배술.jpg",
+    productName: "문배술",
+    productPrice: "11520원",
+    starNum: 5,
+    desc: "한국의 고량주"
+},
+{
+    categorydata: "jeungryuju",
+    img: "./img/증류주/원소주.jpg",
+    productName: "원소주",
+    productPrice: "13410원",
+    starNum: 5,
+    desc: "소주 전용 옹기에서 숙성을 거친"
+},
+{
+    categorydata: "jeungryuju",
+    img: "./img/증류주/매실원주.jpg",
+    productName: "매실원주",
+    productPrice: "5890원",
+    starNum: 3,
+    desc: "달콤한 매실주"
+},
+{
+    categorydata: "jeungryuju",
+    img: "./img/증류주/이강주.jpg",
+    productName: "이강주",
+    productPrice: "10400원",
+    starNum: 5,
+    desc: "배와 생강이 들어간"
+},
+{
+    categorydata: "jeungryuju",
+    img: "./img/증류주/담솔.jpg",
+    productName: "감보드카",
+    productPrice: "20900원",
     starNum: 4,
-    desc: ""
-  },   
+    desc: "시원하게 들어오는 솔향"
+},
+{
+    categorydata: "takju",
+    img: "./img/탁주/구름을 벗삼아.jpg",
+    productName: "구름을 벗삼아 [10병/12병]",
+    productPrice: "20000원",
+    starNum: 5,
+    desc: "깔끔하고 가볍"
+},
+
   {
-    categorydata: "",
-    img: "",
-    productName: "",
-    productPrice: "",
-    starNum: 4,
-    desc: ""
-  },   
+      categorydata: "takju",
+      img: "./img/탁주/막쿠.jpg",
+      productName: "막쿠르트",
+      productPrice: "5200원",
+      starNum: 5,
+      desc: "야쿠르트와 막걸리의 만남"
+  },
   {
-    categorydata: "",
-    img: "",
-    productName: "",
-    productPrice: "",
-    starNum: 4,
-    desc: ""
-  },   
+      categorydata: "takju",
+      img: "./img/탁주/보라 막걸리.jpg",
+      productName: "얼떨결에 퍼플 3병",
+      productPrice: "26700원",
+      starNum: 3,
+      desc: "새콤달콤 포도 스파클링"
+  },
   {
-    categorydata: "",
-    img: "",
-    productName: "",
-    productPrice: "",
-    starNum: 4,
-    desc: ""
-  },   
+      categorydata: "takju",
+      img: "./img/탁주/복순도가 손막.jpg",
+      productName: "복순도가 3병",
+      productPrice: "36000원",
+      starNum: 5,
+      desc: "샴페인막걸리 개봉주의!"
+  },
   {
-    categorydata: "",
-    img: "",
-    productName: "",
-    productPrice: "",
-    starNum: 4,
-    desc: ""
-  },   
-  
+      categorydata: "takju",
+      img: "./img/탁주/잣막.jpg",
+      productName: "문삼이공 잣",
+      productPrice: "22000원",
+      starNum: 3,
+      desc: "수제누룩"
+  },
+  {
+      categorydata: "takju",
+      img: "./img/탁주/술 취한 원숭이.jpg",
+      productName: "술 취한 원숭이 4병",
+      productPrice: "36000원",
+      starNum: 5,
+      desc: "홈파티를 빛낼 술"
+  },
+  {
+      categorydata: "takju",
+      img: "./img/탁주/설하담.png",
+      productName: "설하담 2병",
+      productPrice: "24000원",
+      starNum: 5,
+      desc: "요거트 같은 새콤달콤함"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/06Vn-1678273059529-bask.jpg",
+      productName: "바스크 고블렛잔 세트",
+      productPrice: "13200원",
+      starNum: 4,
+      desc: "강화유리 튼튼!"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/1Lzu-1676627410189-goblet.jpg",
+      productName: "유리 고블렛 감성 소주잔",
+      productPrice: "13200원",
+      starNum: 5,
+      desc: "크기는 작지만 디테일은 꼭꼭 챙겼어요"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/3OBJ-1655456319222-h.jpg",
+      productName: "홀짝잔",
+      productPrice: "17600원",
+      starNum: 5,
+      desc: "막걸리를 위한 도자기 술잔"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/9iS7-1699249079803-1Z7A9823.jpg",
+      productName: "여기담기 술잔",
+      productPrice: "8850원",
+      starNum: 3,
+      desc: "귀여운 술잔을 찾는다면?"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/BfKq-1676868540264-bokmakgeolli.jpg",
+      productName: "여기담기 복 막걸리잔",
+      productPrice: "11200원",
+      starNum: 4,
+      desc: "행운을 기원하는 복 술잔"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/FEaa-1676870623107-SaSaek.jpg",
+      productName: "사색 술잔 세트",
+      productPrice: "9180원",
+      starNum: 5,
+      desc: "여러 명의 친구가 놀러 와도 걱정 없어요"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/HTvp-1699515815117-baker.png",
+      productName: "소일베이커 에그 술잔",
+      productPrice: "8500원",
+      starNum: 3,
+      desc: "한 손에 쏘옥 - 프리미엄 수공예 술잔"
+  },
+  {
+      categorydata: "merchandise",
+      img: "./img/merchandise/TLdL-1681376946499-familia 250_2.jpg",
+      productName: "강화유리 버블잔",
+      productPrice: "1470원",
+      starNum: 3,
+      desc: "볼록볼록 귀여운 술잔"
+  }
 ]
 
-$(document).ready(function(){
-  
+/// 함수부
+$(document).ready(function(){  
 
   let makeContents = '';
   for (i in itemTitleContents) {
