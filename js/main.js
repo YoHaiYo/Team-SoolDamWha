@@ -77,7 +77,7 @@ const langResource = {
     event: "Event",
     signin: "Sign In",
     signup: "Sign Up",
-    serv: "Are you still hesitant about subscribing?",
+    serv: "Still Hesitant?",
     firstb: "Beginner For Sample Liquid",
     saleE: "10% Sale For First Subs!",
     pointup: "Review For Your Accumulate"
