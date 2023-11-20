@@ -36,10 +36,6 @@
   <link rel="stylesheet" href="./css/se.css">
   <link rel="stylesheet" href="./css/jy.css">
   <link rel="stylesheet" href="./css/jr.css">  
-  <!-- JavaScript -->
-  <script defer src="./js/jquery-v2.2.4.js"></script>
-  <script defer src="./js/popup.js"></script>
-  <script defer src="./js/main.js"></script>
 
 </head>
 
@@ -225,9 +221,11 @@
       </div>
 
     </section>
+    <div id="test"></div>
 
     <section id="itemTitle" class="mb80 mt80 wrap">
       <h2 class="text-center"><a href="" class="text-decoration-none">지금 당장 술 담아보기</a></h2>
+      <!-- itemTitle 카테고리 -->
       <ul class="d-flex justify-content-around itemTitleBox">
         <li class="d-flex flex-column align-items-center menu" data-filter=".set">
           <img src="./img/icon_only_sooldamhwa.png" alt="담화박스">
@@ -254,9 +252,10 @@
           <div class="itemTitle">술잔</div>
         </li>
       </ul>
-
+      <!-- itemTitle 컨텐츠 -->
       <div class="itemImgWrap ">
         <div class="itemImgWrap_margin d-flex flex-wrap ">
+          <!-- itemTitle컨텐츠 카드 -->   
           <div class="Imgbox gwashilju">
             <a href="">
               <span><img src="./img/과실주/샤인머스켓와인.jpg" alt=""></span>
@@ -273,6 +272,7 @@
               </div>
             </a>
           </div>
+          <!-- itemTitle컨텐츠 카드 -->                    
           <div class="Imgbox jeungryuju">
             <a href="">
               <span><img src="./img/증류주/겨울소주.jpg" alt=""></span>
@@ -1630,6 +1630,12 @@
 
   </footer>
   
+  <!-- JavaScript -->
+  <script src="./js/jquery-v2.2.4.js"></script>
+  <script src="./js/popup.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/contents-manger.js"></script>
+
 </body>
 
 </html>
