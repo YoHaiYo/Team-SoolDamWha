@@ -200,6 +200,35 @@
 }
 
 
+#login label {
+  font-family: Spoqa Han Sans Neo !important;
+  color: black;
+  font-size: 14px;
+}
+
+#languageSelector {
+  border: none;
+}
+
+#languageSelector label {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+
+}
+
+#languageSelector select {
+  position: absolute;
+  top: 0px;
+  left: 280px;
+  border: none;
+
+}
+
+
+
+
+
 
 
 /* -------------------------------------------------header------------------------------------------------------------------ */

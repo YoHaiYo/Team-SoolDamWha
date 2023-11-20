@@ -52,6 +52,60 @@ $(document).ready(function () {
 
 })
 
+const langResource = {
+
+  ko: {
+    subs: "구독",
+    total: "전체상품",
+    best: "베스트",
+    event: "이벤트",
+    signin: "로그인",
+    signup: "회원가입",
+    serv: "구독, 아직도 망설이시나요?",
+    firstb: "첫 구매시 샘플 술 증정",
+    saleE: "첫 구독은 10% 할인!",
+    pointup: "리뷰 쓰면 쌓이는 포인트!",
+
+
+
+
+  },
+  en: {
+    subs: "Subscribe",
+    total: "Items",
+    best: "Best",
+    event: "Event",
+    signin: "Sign In",
+    signup: "Sign Up",
+    serv: "Are you still hesitant about subscribing?",
+    firstb: "Beginner For Sample Liquid",
+    saleE: "10% Sale For First Subs!",
+    pointup: "Review For Your Accumulate"
+
+  }
+}
+
+let mychoic = document.getElementById("languageSelector").value;
+updateLanguage(mychoic);
+
+document.getElementById("languageSelector").addEventListener("change", function () {
+  mychoic = this.value;
+  updateLanguage(mychoic);
+});
+
+function updateLanguage(lang) {
+  for (let key in langResource[lang]) {
+
+    const element = document.getElementById(key);
+
+    if (element) {
+      element.textContent = langResource[lang][key];
+
+    }
+  }
+}
+
+
 
 // $("#topbtn").click(function (x) {
 //   x.preventDefault();
