@@ -47,6 +47,10 @@
   text-wrap: nowrap;
   width: 61px;
 }
+#contact #send {
+  font-family: SOYOMapleBoldTTF;
+
+}
 
 /*입점문의 메세지 라벨*/
 #contact .contactbox #c-m {
@@ -76,6 +80,8 @@
 #contact input::placeholder {
   color: #868282;
 }
+
+
 
 /* --------------리뷰--------------- */
 
