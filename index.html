@@ -789,51 +789,56 @@
 
     </section>
 
-    <section id="contact" class="mx-auto wrap ">
+    <section id="contact" class="mx-auto wrap">
 
       <h2 class="text-center">
         <a>입점문의</a>
       </h2>
 
-      <div class="contactbox d-flex row-cols-1 justify-content-center align-items-center">
-        <form action="#" name="contact-info" method="post" class="container d-flex">
+      <div class="contactbox d-flex">
+        <form action="#" name="contact-info" method="post" class="containe">
+          <div class="text-center">
+            <div  class="d-flex justify-content-center align-content-center">
+              <div id="n-c-e" class="d-flex flex-column">
 
-          <div class="d-flex flex-column ">
+                <div class="him h-100">
+                  <label for="name">이름</label>
+                  <input type="text" name="name" placeholder="이름" required>
+                </div>
 
-            <div class="him h-100">
-              <label for="name">이름</label>
-              <input type="text" name="name" placeholder="이름" required>
+                <div class="him h-100">
+                  <label for="num">전화번호</label>
+                  <input type="text" name="num" placeholder="010-0000-0000" required>
+                </div>
+
+                <div class="him h-100 ">
+                  <label for="email">이메일</label>
+                  <input type="email" name="email" placeholder="example@example.com" required>
+                </div>
+              </div>
+
+              <div class="him h-100 w-100" id="c-m">
+                <label for="message">메시지</label>
+                <textarea id="message" name="message" cols="19" rows="5" placeholder="메세지를 입력해주세요^^" required
+                  style="background-color: transparent"></textarea>
+              </div>
             </div>
 
-            <div class="him h-100">
-              <label for="num">전화번호</label>
-              <input type="text" name="num" placeholder="010-0000-0000" required>
-            </div>
-
-            <div class="him h-100">
-              <label for="email">이메일</label>
-              <input type="email" name="email" placeholder="example@example.com" required>
+            <div id="send">
+              <div>
+                <label for="check" id="cb">
+                  <input type="checkbox">개인정보수집 이용 동의
+                  <input type="submit" name="send-btn" value="보내기" class="sooldam-btn mt-3">
+                </label>
+              </div>
             </div>
           </div>
-
-          <div class="him h-100" id="c-m">
-            <label for="message">메시지</label>
-            <textarea id="message" name="message" cols="18"  rows="5" placeholder="메세지를 입력해주세요^^" required
-              style="background-color: transparent"></textarea>
-          </div>
+        </form>
       </div>
 
-      <div id="send">
-        <div class="d-flex justify-content-center align-items-center">
-          <label for="check" id="cb" class="text-center">
-            <input type="checkbox">개인정보수집 이용 동의          
-          <input type="submit" name="send-btn" value="보내기" class="sooldam-btn mt-3">
-        </label>
-        </div>
-        
-      </div>
 
-      </form>
+
+
     </section>
 
   </main>

@@ -30,6 +30,10 @@
   border-radius: 10px;
 }
 
+#contact .contactbox #n-c-e {
+  margin: ;
+}
+
 #contact .contactbox .him input {
   background-color: transparent;
   border: none;
@@ -45,8 +49,8 @@
   text-align: left;
   align-items: center;
   text-wrap: nowrap;
-  width: 61px;
 }
+
 #contact #send {
   font-family: SOYOMapleBoldTTF;
 
@@ -61,7 +65,6 @@
   border: transparent;
   color: #333;
   flex-grow: 1;
-  /* margin: 0.552rem 0.1rem; */
 }
 
 #contact .contactbox textarea::placeholder {
