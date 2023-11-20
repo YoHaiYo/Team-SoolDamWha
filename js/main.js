@@ -92,7 +92,18 @@ $(function () {
     $("#itemTitle .Imgbox").hide()
     $(menufilter).show()
 
+    $("#itemTitle .hideMenu").removeClass("on")
+
     $(this).addClass("on").siblings().removeClass("on")
+  })
+
+
+  // let hideMenu = ""
+  $("#itemTitle button").click(function () {
+    // hideMenu = $(this).data("hfilter")
+    // $(hideMenu).show()
+    $("#itemTitle .hideMenu").addClass("on")
+
   })
 
 })
