@@ -91,19 +91,35 @@ $(function () {
     menufilter = $(this).data("filter");
     $("#itemTitle .Imgbox").hide()
     $(menufilter).show()
-
     $("#itemTitle .hideMenu").removeClass("on")
 
     $(this).addClass("on").siblings().removeClass("on")
   })
 
+})
 
-  // let hideMenu = ""
-  $("#itemTitle button").click(function () {
-    // hideMenu = $(this).data("hfilter")
-    // $(hideMenu).show()
+
+
+var more = ["더보기", "닫기"]
+
+let moreButton = "true"
+moreButton = $("#itemTitle button").html(more[0])
+
+document.querySelector("#itemTitle button").addEventListener("click", function () {
+  this.classList.toggle('on')
+
+
+  console.log($("#itemTitle").offset())
+
+  moreButton = this.classList.contains('on')
+  if (moreButton) {
+    $("#itemTitle button").html(more[1])
     $("#itemTitle .hideMenu").addClass("on")
+  } else {
+    $("#itemTitle button").html(more[0])
+    $("#itemTitle .hideMenu").removeClass("on")
+  }
 
-  })
 
 })
+
