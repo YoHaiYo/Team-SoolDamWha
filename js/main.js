@@ -100,7 +100,7 @@ $(function () {
 
 
 
-var more = [`더보기`, `<a href="#itemTitle">닫기</a>`]
+let more = [`더보기`, `<a href="#itemTitle">닫기</a>`]
 
 let moreButton = ""
 moreButton = $("#itemTitle button").html(more[0])
