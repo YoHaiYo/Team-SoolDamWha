@@ -19,6 +19,10 @@ https://github.com/SeungEunChun
 YoHaiYo
 https://github.com/YoHaiYo
 
+# 기획서 (노션)
+https://invented-level-d67.notion.site/9299e0485c414f87bd02d8b202c4364d?pvs=4
+
+
 # 사용플러그인
 - BOOTSTRAP 5.3.2
 - bootstrap-icons 1.11.1
