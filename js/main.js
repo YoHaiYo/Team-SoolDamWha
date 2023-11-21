@@ -123,8 +123,8 @@ AOS.init({
 })
 
 
-// 메뉴 클릭시 바뀌는
 
+// 메뉴 클릭시 바뀌는
 $(function () {
   $("#itemTitle .Imgbox").hide()
   $('#itemTitle .set').show()
@@ -133,17 +133,21 @@ $(function () {
 
   $("#itemTitle .itemTitleBox li").click(function () {
 
-
     menufilter = $(this).data("filter");
     $("#itemTitle .Imgbox").hide()
     $(menufilter).show()
 
-    // $("#itemTitle .itemTitle").addClass("on")
+    $("#itemTitle .hideMenu").removeClass("on")
+
+    $(this).addClass("on").siblings().removeClass("on")
   })
 
 
-  $("#itemTitle .itemTitle").click(function () {
-    $(this).addClass("on").parents().siblings().find("div").removeClass("on")
+  // let hideMenu = ""
+  $("#itemTitle button").click(function () {
+    // hideMenu = $(this).data("hfilter")
+    // $(hideMenu).show()
+    $("#itemTitle .hideMenu").addClass("on")
 
   })
 

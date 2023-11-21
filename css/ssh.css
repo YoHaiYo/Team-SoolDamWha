@@ -40,7 +40,7 @@ body {
 }
 #subscribe #popup {
   position: absolute;
-  top: 80%;
+  top: 105%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9;
@@ -79,10 +79,10 @@ body {
 #subscribe #cat {
   position: absolute;
   z-index: 9;
-  left: calc(100% - 200px);
+  left: calc(100% - 300px);
 }
 #subscribe #cat img {
-  width: 200px;
+  width: 300px;
 }
 
 #bestTitle {
@@ -103,11 +103,11 @@ body {
   font-size: 30px;
 }
 #bestTitle .slide-box .ssh--btn-go-now {
-  width: 160px;
-  height: 35px;
-  border: 1px solid #333;
-  border-radius: 10px;
-  background-color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  background-color: #0d6efd;
+  color: white;
 }
 #bestTitle .slide-box .slide-box-btns {
   bottom: 67px;

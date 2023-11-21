@@ -166,6 +166,8 @@ a {
   transform: scale(1.1);
 }
 
+
+
 /* footer */
 #fd {
   background-color: #FFDF80;
@@ -276,4 +278,21 @@ a {
 
 #itemTitle .menu.on .itemTitle {
   color: #3395ED;
+}
+
+/* #itemTitle .hide {
+  display: none !important;
+}
+
+
+#itemTitle .hide.on {
+  display: block !important;
+} */
+
+#itemTitle .hideMenu {
+  display: none;
+}
+
+#itemTitle .hideMenu.on {
+  display: block;
 }
