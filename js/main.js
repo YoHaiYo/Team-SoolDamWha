@@ -105,11 +105,10 @@ var more = ["더보기", "닫기"]
 let moreButton = "true"
 moreButton = $("#itemTitle button").html(more[0])
 
+
+
 document.querySelector("#itemTitle button").addEventListener("click", function () {
   this.classList.toggle('on')
-
-
-  console.log($("#itemTitle").offset())
 
   moreButton = this.classList.contains('on')
   if (moreButton) {
@@ -118,8 +117,16 @@ document.querySelector("#itemTitle button").addEventListener("click", function (
   } else {
     $("#itemTitle button").html(more[0])
     $("#itemTitle .hideMenu").removeClass("on")
-  }
 
+  }
 
 })
 
+let cloTop = ""
+
+$("#itemTitle button").click(function (e) {
+  e.preventDefault();
+  cloTop = $(".scrollTop").attr('href');
+  $(this).stop(true, true).animate({ scrollTop: $(cloTop).offset().top })
+  console.log(cloTop)
+})
