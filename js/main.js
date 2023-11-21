@@ -100,12 +100,10 @@ $(function () {
 
 
 
-var more = ["더보기", "닫기"]
+var more = [`더보기`, `<a href="#itemTitle">닫기</a>`]
 
-let moreButton = "true"
+let moreButton = ""
 moreButton = $("#itemTitle button").html(more[0])
-
-
 
 document.querySelector("#itemTitle button").addEventListener("click", function () {
   this.classList.toggle('on')
@@ -120,13 +118,4 @@ document.querySelector("#itemTitle button").addEventListener("click", function (
 
   }
 
-})
-
-let cloTop = ""
-
-$("#itemTitle button").click(function (e) {
-  e.preventDefault();
-  cloTop = $(".scrollTop").attr('href');
-  $(this).stop(true, true).animate({ scrollTop: $(cloTop).offset().top })
-  console.log(cloTop)
 })
