@@ -224,10 +224,6 @@ const langResource = {
       }]
 
   }
-
-
-
-
   //   en: {
   //     subs: "Subscribe",
   //     total: "Items",
@@ -242,10 +238,11 @@ const langResource = {
 
 
   //   }
+
+
+
+
 }
-
-
-
 let gnbtags = '';
 
 for (x in langResource.ko.gnb) {
@@ -263,6 +260,9 @@ for (x in langResource.ko.login) {
 }
 
 $("#login").prepend(logintags)
+
+
+
 
 
 // updateLanguage('ko');
