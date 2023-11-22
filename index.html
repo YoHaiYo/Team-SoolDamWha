@@ -62,23 +62,30 @@
 <body class="overflow-x-hidden">
 
   <header id="hd" class="fixed-top bg-white">
-    <div class="wrap text-center container-lg position-relative pt-5">
+    <div class="wrap  text-center container-lg position-relative">
       <h1>
         <a href="#hd">
           <img src="./img/hd_logo.png" alt="로고">
         </a>
       </h1>
       <ul id="gnb" class="d-flex justify-content-center ">
-        <li><a href="#">구독</a></li>
+        <!-- <li><a href="#">구독</a></li>
         <li><a href="#itemTitle" class="scrolla">전체상품</a></li>
         <li><a href="#bestTitle" class="scrolla">베스트</a></li>
-        <li><a href="#none">이벤트</a></li>
-        <li><a href="#none">Q & A</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">Q & A</a></li> -->
       </ul>
       <ul id="login" class="d-flex justify-content-end position-absolute">
-        <li class="mx-3"><a href="#">로그인</a></li>
-        <li class="mx-3"><a href="#">회원가입</a></li>
-        <li class="mx-3"><button>한국어</button>&#124;<button>영어</button></li>
+        <!-- <li class="mx-3"><a href="#">로그인</a></li>
+        <li class="mx-3"><a href="#">회원가입</a></li> -->
+        <!-- <li class="mx-3"><button>한국어</button>&#124;<button>영어</button></li> -->
+        <li>
+
+          <select name="" id="languageSelector">
+            <option value="en">English</option>
+            <option value="ko" selected>한국어</option>
+          </select>
+        </li>
       </ul>
     </div>
   </header>
@@ -89,17 +96,23 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide bgimg1 ">
 
-            <div class="effecttext">첫 <br> 구매시 <br> 샘플 술 증정</div>
+            <div class="effecttext"><strong>첫 구매시 샘플 술 증정</strong>
+              <p>신규 가입하고 <span class="d-block"></span> 궁금했던 술 체험해보세요.</p>
+            </div>
+
 
           </div>
           <div class="swiper-slide bgimg2">
 
-            <div class="effecttext">첫 <br> 구독 <br> 할인 이벤트</div>
+            <div class="effecttext"><strong>첫 구독은 10% 할인!</strong>
+              <p>신규 가입 혜택 받고 <span class="d-block"> 소믈리에가 엄선한 전통주를 </span> 매월 경험하세요.</p>
+            </div>
           </div>
           <div class="swiper-slide bgimg3">
 
-            <div class="effecttext">sns <br>포토후기 작성 인증하면 <br> 포인트
-              2000원 적립</div>
+            <div class="effecttext"><strong>리뷰 쓰면 쌓이는 포인트!</strong>
+              <p>sns 후기 인증 시 2,000원 적립</p>
+            </div>
           </div>
 
         </div>
@@ -109,6 +122,7 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
+
 
   </section>
 
@@ -893,7 +907,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/구름을 벗삼아.jpg" alt="" >
+                <img src="./img/탁주/구름을 벗삼아.jpg" alt="" id="ptrv">
                 <p>어울리는 안주 만들어 남편과 같이 마셔봐야겠어요.</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
@@ -914,7 +928,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/술 취한 원숭이.jpg" alt="" >
+                <img src="./img/탁주/술 취한 원숭이.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
                   <a>
@@ -935,7 +949,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/보라 막걸리.jpg" alt="" >
+                <img src="./img/탁주/보라 막걸리.jpg" alt="" id="ptrv">
                 <p>정말 맛있게 잘 먹었습니다!</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-06.svg" alt=""> re15님,</a>
@@ -956,7 +970,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/증류주/문배술.jpg" alt="" >
+                <img src="./img/증류주/문배술.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
                   <a>
@@ -977,7 +991,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/증류주/원소주.jpg" alt="" >
+                <img src="./img/증류주/원소주.jpg" alt="" id="ptrv">
                 <p>정말 맛있게 잘 먹었습니다!</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-04.svg" alt=""> re15님,</a>
@@ -994,7 +1008,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/과실주/자두와인.jpg" alt="" >
+                <img src="./img/과실주/자두와인.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-07.svg" alt=""> re15님,</a>
                   <a>
@@ -1015,7 +1029,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/담은 블랙.jpg" alt="" >
+                <img src="./img/탁주/담은 블랙.jpg" alt="" id="ptrv">
                 <p>정말 맛있게 잘 먹었습니다!</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
@@ -1035,7 +1049,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/청주/홍삼명주.jpg" alt="" >
+                <img src="./img/청주/홍삼명주.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-04.svg" alt=""> re15님,</a>
                   <a>
@@ -1056,7 +1070,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/증류주/겨울소주.jpg" alt="" >
+                <img src="./img/증류주/겨울소주.jpg" alt="" id="ptrv">
                 <p>rew님, 놀러갈 때 꼭 사고 갑니다~</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
@@ -1075,7 +1089,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/설하담.png" alt="" >
+                <img src="./img/탁주/설하담.png" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-07.svg" alt=""> re15님,</a>
                   <a>
@@ -1096,7 +1110,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/구름을 벗삼아.jpg" alt="" >
+                <img src="./img/탁주/구름을 벗삼아.jpg" alt="" id="ptrv">
                 <p>부모님도 많이 좋아하셨습니다.</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-02.svg" alt=""> re15님,</a>
@@ -1117,7 +1131,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/술 취한 원숭이.jpg" alt="" >
+                <img src="./img/탁주/술 취한 원숭이.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
                   <a>
@@ -1138,7 +1152,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/보라 막걸리.jpg" alt="" >
+                <img src="./img/탁주/보라 막걸리.jpg" alt="" id="ptrv">
                 <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
@@ -1159,7 +1173,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/증류주/문배술.jpg" alt="" >
+                <img src="./img/증류주/문배술.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-06.svg" alt=""> re15님,</a>
                   <a>
@@ -1180,7 +1194,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/증류주/원소주.jpg" alt="" >
+                <img src="./img/증류주/원소주.jpg" alt="" id="ptrv">
                 <p>정말 맛있게 잘 먹었습니다!</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-02.svg" alt=""> re15님,</a>
@@ -1201,7 +1215,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/과실주/자두와인.jpg" alt="" >
+                <img src="./img/과실주/자두와인.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-03.svg" alt=""> re15님,</a>
                   <a>
@@ -1220,7 +1234,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/담은 블랙.jpg" alt="" >
+                <img src="./img/탁주/담은 블랙.jpg" alt="" id="ptrv">
                 <p>정말 맛있게 잘 먹었습니다!</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
@@ -1238,7 +1252,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/청주/홍삼명주.jpg" alt="" >
+                <img src="./img/청주/홍삼명주.jpg" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-04.svg" alt=""> re15님,</a>
                   <a>
@@ -1258,7 +1272,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/증류주/겨울소주.jpg" alt="" >
+                <img src="./img/증류주/겨울소주.jpg" alt="" id="ptrv">
                 <p>놀러갈 때 꼭 사고 갑니다~</p>
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
@@ -1277,7 +1291,7 @@
 
             <div class="swiper-slide">
               <div>
-                <img src="./img/탁주/설하담.png" alt="" >
+                <img src="./img/탁주/설하담.png" alt="" id="ptrv">
                 <div id="face" class="d-flex justify-content-center">
                   <a id="face-t"><img src="./img/face1-02.svg" alt=""> re15님,</a>
                   <a>
