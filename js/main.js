@@ -103,7 +103,7 @@ const langResource = {
       }
 
     ],
-    promotion: [
+    promotion: [//향후 php 사용하게 되면 스와이퍼 내부 내용 및 배경이미지도 데이터 테이블로 관리 가능
       {
         scls: "bgimg1",
         ccls: "effecttext",
@@ -265,21 +265,44 @@ for (x in langResource.ko.login) {
 $("#login").prepend(logintags)
 
 
-// let mychoic = document.getElementById("languageSelector").value;
-// updateLanguage(mychoic);
+// updateLanguage('ko');
+
+// var lang = "";
+// $("#languageSelector2 div").click(function () {
+//   lang = $(this).data('language');
+//   console.log(lang)
+
+//   // updateLanguage(lang);
+// })
+
+
+
+
+
+
+
 
 // document.getElementById("languageSelector").addEventListener("change", function () {
-//   mychoic = this.value;
-//   updateLanguage(mychoic);
+
+//   updateLanguage(this.value);
 // });
 
 // function updateLanguage(lang) {
 //   for (let key in langResource[lang]) {
 
 //     const element = document.getElementById(key);
-
+//     console.log(key)
 //     if (element) {
-//       element.textContent = langResource[lang][key];
+//       gnbtags = '';
+
+//       for (x in langResource[lang].gnb) {
+//         gnbtags += `<li><a href="${langResource[lang].gnb[x].href}" class="${langResource[lang].gnb[x].cls}">${langResource[lang].gnb[x].nm}</a></li>`
+//       }
+
+
+
+//       $(element).html(gnbtags)
+
 
 //     }
 //   }
