@@ -51,6 +51,7 @@ $(document).ready(function () {
   })
 
 })
+
 // 글로벌-----------------------------------------------
 const langResource = {
 
@@ -224,6 +225,10 @@ const langResource = {
       }]
 
   }
+
+
+
+
   //   en: {
   //     subs: "Subscribe",
   //     total: "Items",
@@ -238,11 +243,10 @@ const langResource = {
 
 
   //   }
-
-
-
-
 }
+
+
+
 let gnbtags = '';
 
 for (x in langResource.ko.gnb) {
@@ -260,9 +264,6 @@ for (x in langResource.ko.login) {
 }
 
 $("#login").prepend(logintags)
-
-
-
 
 
 // updateLanguage('ko');
@@ -287,40 +288,28 @@ $("#login").prepend(logintags)
 //   updateLanguage(this.value);
 // });
 
-function updateLanguage(lang) {
-  for (let key in langResource[lang]) {
+// function updateLanguage(lang) {
+//   for (let key in langResource[lang]) {
 
-    const element = document.getElementById(key);
-    console.log(key)
-    if (element) {
-      gnbtags = '';
+//     const element = document.getElementById(key);
+//     console.log(key)
+//     if (element) {
+//       gnbtags = '';
 
-      for (x in langResource[lang].gnb) {
-        gnbtags += `<li><a href="${langResource[lang].gnb[x].href}" class="${langResource[lang].gnb[x].cls}">${langResource[lang].gnb[x].nm}</a></li>`
-      }
-
-
-
-      $(element).html(gnbtags)
+//       for (x in langResource[lang].gnb) {
+//         gnbtags += `<li><a href="${langResource[lang].gnb[x].href}" class="${langResource[lang].gnb[x].cls}">${langResource[lang].gnb[x].nm}</a></li>`
+//       }
 
 
-    }
-  }
-}
+
+//       $(element).html(gnbtags)
+
+
+//     }
+//   }
+// }
 
 // 글로벌-----------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -329,8 +318,8 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
     delay: 4000,
     disableOnInteraction: false,
   },
-  spaceBetween: 30,
-  slidesPerView: 5.5,
+  spaceBetween: 10,
+  slidesPerView: 1.5,
   loop: false,
 
   direction: 'horizontal',
@@ -340,26 +329,53 @@ const bestSwiper = new Swiper('#bestTitle .swiper', {
   navigation: {
     nextEl: '#bestTitle .swiper-button-next',
     prevEl: '#bestTitle .swiper-button-prev',
-  }
+  },
+  breakpoints: {
+    // 535: {
+    //   slidesPerView: 1.5,
+    // },
+    735: {
+      slidesPerView: 2.5,
+    },
+    1035: {
+      slidesPerView: 3.5,
+    },
+    1335: {
+      slidesPerView: 4.5,
+    },
+    1665: {
+      slidesPerView: 5.5,
+    },
+  },
 });
+
 
 const review = new Swiper('#photoRvbox .swiper', {
   loop: true,
+  speed: 6000,
+  speed: 6000,
   centeredSlides: true,
-  slidesPerView: 4,
-  centeredSlides: true,
-  spaceBetween: 6,
+  slidesPerView: 7,
+  spaceBetween: 8,
+  slidesPerView: 7,
+  spaceBetween: 8,
   autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+    delay: 0,
+    disableOnInteraction: false
   },
   pagination: {
     el: '#photoRvbox .swiper-pagination',
     clickable: true,
   },
-
-
 });
+
+function sendInfo() {
+  if ($("input[type=checkbox]").is(":checked") == true) {
+    alert("성공적으로 전송 완료되었습니다.")
+  } else {
+    alert("⚠️개인정보수집 이용 동의 체크해주세요.⚠️")
+  }
+}
 
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
 const spyEls = document.querySelectorAll('.scroll-spy')
@@ -380,3 +396,56 @@ AOS.init({
 
 
 
+
+
+
+// 메뉴 클릭시 바뀌는
+
+$(function () {
+  $("#itemTitle .Imgbox").hide()
+  $('#itemTitle .set').show()
+
+  let menufilter = "";
+
+  $("#itemTitle .itemTitleBox li").click(function () {
+
+    menufilter = $(this).data("filter");
+    $("#itemTitle .Imgbox").hide()
+    $(menufilter).show()
+    $("#itemTitle .hideMenu").removeClass("on")
+
+    $(this).addClass("on").siblings().removeClass("on")
+  })
+
+})
+
+
+
+let more = [`더보기`, `<a href="#itemTitle">닫기</a>`]
+
+let moreButton = ""
+moreButton = $("#itemTitle button").html(more[0])
+
+document.querySelector("#itemTitle button").addEventListener("click", function () {
+  this.classList.toggle('on')
+
+  moreButton = this.classList.contains('on')
+  if (moreButton) {
+    $("#itemTitle button").html(more[1])
+    $("#itemTitle .hideMenu").addClass("on")
+  } else {
+    $("#itemTitle button").html(more[0])
+    $("#itemTitle .hideMenu").removeClass("on")
+
+  }
+
+})
+
+// 개인정보수집 이용 동의
+function sendInfo() {
+  if ($("input[type=checkbox]").is(":checked") == true) {
+    alert("성공적으로 전송 완료되었습니다.")
+  } else {
+    alert("⚠️개인정보수집 이용 동의 체크해주세요.⚠️")
+  }
+}

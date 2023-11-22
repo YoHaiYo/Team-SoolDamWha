@@ -1,35 +1,7 @@
-@font-face {
-  font-family: 'SOYOMapleBoldTTF';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ImcreSoojin';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;600&display=swap');
-
-
-.appdown {
-  // display: none;
-  position: absolute;
-  // float: left;
-  left: 37%;
-  top: 90%;
-  
-  // transform: translate(-50%, 0%);
-  // top: 20%;
-  // left: 40%;
-  // width: 400px;
-  // height: 300px;
-  // border: 1px solid #333;
-  // background-color: #fff;
-  z-index: 9;
+@import url('./font.css');
+// Common
+body {
+  overflow-x: hidden;
 }
 
 // MAIN
@@ -50,33 +22,40 @@
       a {
         &:hover {
           img {
-            background-color: #333;
-            opacity: .5;
+            // background-color: #333;
+            // opacity: .5;
+            // filter: brightness(50%);
           }
 
           .box-explain {
-            display: block;
+            // display: block;
+            // opacity: 1;
           }
         }
 
         img {
           width: 290px;
           height: 290px;
+          transition: .5s;
+          &:hover {
+            transform: scale(1.03);
+            
+          }
         }
 
         .box-name {
           font-size: 30px;
+          font-family: 'ImcreSoojin';
         }
       }
 
       .box-explain {
-        display: none;
-        // opacity: 0;
-        color: #000;
-        background-color: darkblue;
-        display: none;
-        margin-top: -200px;
+        // display: none;
+        opacity: 0;
         color: #fff;
+        background-color: darkblue;
+        margin-top: -200px;
+        // z-index: 9;
       }
     }
   }
@@ -90,15 +69,68 @@
     width: 215px;
     height: 60px;
   }
+
+  #popup {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 5px 4px 27px -4px rgba(0, 0, 0, 0.57);
+
+    border-radius: 1rem;
+
+    .popup-content {
+      img {
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+
+    .popup-btn {
+      // height: 48px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 0 0 1rem 1rem;
+
+      .oneday-close,
+      .close {
+        display: inline-block;
+        width: 50%;
+        line-height: 3;
+        box-sizing: border-box;
+        background-color: #fff;
+      }
+
+      .oneday-close {
+        border: 1px solid #333;
+        border-radius: 0 0 0 1rem;
+      }
+
+      .close {
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        border-radius: 0 0 1rem 0;
+      }
+    }
+  }
+  #cat {
+    position: absolute;
+    z-index: 9;
+    left: calc(100% - 300px);
+    img {
+      width: 300px;
+    }
+    
+  }
 }
 
 #bestTitle {
   margin-top: 50px;
   margin-bottom: 50px;
-
-  h2 {
-    a {}
-  }
 
   .slide-box {
     width: 260px;
@@ -115,11 +147,13 @@
     }
 
     .ssh--btn-go-now {
-      width: 160px;
-      height: 35px;
-      border: 1px solid #333;
-      border-radius: 10px;
-      background-color: white;
+      // width: 160px;
+      // height: 35px;
+      padding: .5rem 1rem;
+      border: 1px solid transparent;
+      border-radius: 1rem;
+      background-color: #0d6efd;
+      color: white;
     }
 
     .slide-box-btns {
@@ -152,21 +186,59 @@
 
   .swiper {
     width: 1700px;
+    padding: 2rem 0;
     // border: 1px solid #333;
 
-
     .swiper-wrapper {
-      .swiper-slide {
+      .swiper-slide {        
+        &:hover {
+          .pickbox {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition: .5s;
+          }
+        }
         a {
+          transition: .3s;
+          &:hover {
+            filter: brightness(50%);
+          }
           img {
             width: 260px;
             height: 330px;
             border-radius: 20px;
+            box-shadow: 8px 6px 17px -7px rgba(0,0,0,0.52);
+            -webkit-box-shadow: 8px 6px 17px -7px rgba(0,0,0,0.52);
+            -moz-box-shadow: 8px 6px 17px -7px rgba(0,0,0,0.52);
+          }
+        }
+        .pickbox {
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -20%);
+
+          .picktitle {
+            color: #fff;
+            font-size: 30px;
+            white-space: nowrap;
+
+          }
+
+          .hashtag {
+            color: #fff;
+            white-space: nowrap;
           }
         }
       }
     }
   }
+}
 
-
+// 반응형
+@media (max-width: 535px) { 
+  #bestTitle .slide-box {
+    display: none !important;   
+  }
 }
