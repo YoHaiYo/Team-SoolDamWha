@@ -826,21 +826,17 @@
 
             <div id="send">
               <div>
-                <label for="check" id="cb">
-                  <input type="checkbox">개인정보수집 이용 동의
-                  <input type="submit" name="send-btn" value="보내기" onclick='sendMent()' class="sooldam-btn mt-3">
-                </label>
+            
+                <label for="agree">개인정보수집 이용 동의</label>
+                <input type="checkbox" id="agree">
+                <input type="submit" name="send-btn" value="보내기" onclick='sendInfo()' class="sooldam-btn mt-3">
+            
               </div>
             </div>
           </div>
         </form>
       </div>
 
-      <script>
-        function sendMent() {
-          alert("전송 완료되었습니다.")
-        }
-      </script>
 
 
 

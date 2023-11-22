@@ -58,6 +58,14 @@ const review = new Swiper('#photoRvbox .swiper', {
   },
 });
 
+function sendInfo() {
+  if ($("input[type=checkbox]").is(":checked") == true) {
+    alert("성공적으로 전송 완료되었습니다.")
+  } else {
+    alert("⚠️개인정보수집 이용 동의 체크해주세요.⚠️")
+  }
+}
+
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
 const spyEls = document.querySelectorAll('.scroll-spy')
 spyEls.forEach(function(spyEl) {
