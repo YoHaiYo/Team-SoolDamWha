@@ -265,7 +265,7 @@ for (x in langResource.ko.login) {
 $("#login").prepend(logintags)
 
 
-updateLanguage('ko');
+// updateLanguage('ko');
 
 // var lang = "";
 // $("#languageSelector2 div").click(function () {
