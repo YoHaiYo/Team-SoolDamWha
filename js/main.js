@@ -105,6 +105,7 @@ const review = new Swiper('#photoRvbox .swiper', {
   },
 });
 
+
 /// ScrollMagic : 스크롤 됬을때 애니메이션 실행하기
 const spyEls = document.querySelectorAll('.scroll-spy')
 spyEls.forEach(function(spyEl) {
@@ -124,7 +125,9 @@ AOS.init({
 
 
 
+
 // 메뉴 클릭시 바뀌는
+
 $(function () {
   $("#itemTitle .Imgbox").hide()
   $('#itemTitle .set').show()
@@ -136,19 +139,40 @@ $(function () {
     menufilter = $(this).data("filter");
     $("#itemTitle .Imgbox").hide()
     $(menufilter).show()
-
     $("#itemTitle .hideMenu").removeClass("on")
 
     $(this).addClass("on").siblings().removeClass("on")
   })
 
+})
 
-  // let hideMenu = ""
-  $("#itemTitle button").click(function () {
-    // hideMenu = $(this).data("hfilter")
-    // $(hideMenu).show()
+
+
+let more = [`더보기`, `<a href="#itemTitle">닫기</a>`]
+
+let moreButton = ""
+moreButton = $("#itemTitle button").html(more[0])
+
+document.querySelector("#itemTitle button").addEventListener("click", function () {
+  this.classList.toggle('on')
+
+  moreButton = this.classList.contains('on')
+  if (moreButton) {
+    $("#itemTitle button").html(more[1])
     $("#itemTitle .hideMenu").addClass("on")
+  } else {
+    $("#itemTitle button").html(more[0])
+    $("#itemTitle .hideMenu").removeClass("on")
 
-  })
+  }
 
 })
+
+// 개인정보수집 이용 동의
+function sendInfo() {
+  if ($("input[type=checkbox]").is(":checked") == true) {
+    alert("성공적으로 전송 완료되었습니다.")
+  } else {
+    alert("⚠️개인정보수집 이용 동의 체크해주세요.⚠️")
+  }
+}
