@@ -265,7 +265,7 @@ for (x in langResource.ko.login) {
 $("#login").prepend(logintags)
 
 
-// updateLanguage('ko');
+updateLanguage('ko');
 
 // var lang = "";
 // $("#languageSelector2 div").click(function () {
@@ -287,26 +287,26 @@ $("#login").prepend(logintags)
 //   updateLanguage(this.value);
 // });
 
-// function updateLanguage(lang) {
-//   for (let key in langResource[lang]) {
+function updateLanguage(lang) {
+  for (let key in langResource[lang]) {
 
-//     const element = document.getElementById(key);
-//     console.log(key)
-//     if (element) {
-//       gnbtags = '';
+    const element = document.getElementById(key);
+    console.log(key)
+    if (element) {
+      gnbtags = '';
 
-//       for (x in langResource[lang].gnb) {
-//         gnbtags += `<li><a href="${langResource[lang].gnb[x].href}" class="${langResource[lang].gnb[x].cls}">${langResource[lang].gnb[x].nm}</a></li>`
-//       }
-
-
-
-//       $(element).html(gnbtags)
+      for (x in langResource[lang].gnb) {
+        gnbtags += `<li><a href="${langResource[lang].gnb[x].href}" class="${langResource[lang].gnb[x].cls}">${langResource[lang].gnb[x].nm}</a></li>`
+      }
 
 
-//     }
-//   }
-// }
+
+      $(element).html(gnbtags)
+
+
+    }
+  }
+}
 
 // 글로벌-----------------------------------------------
 
