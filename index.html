@@ -4,26 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team-SoolDamWha</title>
 
+  <!-- SEO -->
+  <!-- 기본설명-->
+  <meta name="description" content="술담화, 전통주, 구독형서비스 등 제공" />
+  <!-- 로봇 -->
+  <meta name="robots" content="index,follow" />
+  <!-- 공유시 보여줄정보 -->
+  <meta property="og:site_name" content="술담화" />
+  <meta property="og:url" content="https://yohaiyo.github.io/Team-SoolDamWha/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="술담화" />
+  <meta property="og:description" content="술담화, 전통주, 구독형서비스 등 제공" />
+  <meta property="og:image" content="https://www.cafe24.com/wp-content/uploads/2023/01/cafe24_99_og.jpg" />
+  <!-- 트위터공유시 보여줄정보 -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="술담화" />
+  <meta name="twitter:url" content="https://yohaiyo.github.io/Team-SoolDamWha/" />
+  <meta name="twitter:description" content="술담화, 전통주, 구독형서비스 등 제공" />
+  <!-- 모바일 바로가기 이미지 -->
+  <link rel="shortcut icon" type="image/x-icon" href="./img/hd_logo.png" />
+  <link rel="apple-touch-icon" href="./img/hd_logo.png" />
+  <link rel="apple-touch-icon-precomposed" href="./img/hd_logo.png">
+
+  <title>SoolDamWha</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <!-- font -->
   <link rel="stylesheet" href="./css/font.css">
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2">
   <!-- CSS RESET -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> -->
   <!-- ICON -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/ssh.min.css">
-  <link rel="stylesheet" href="./css/se.css">
-  <link rel="stylesheet" href="./css/jy.css">
-  <link rel="stylesheet" href="./css/jr.css">
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -36,13 +52,16 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- JavaScript -->
-  <script defer src="./js/jquery-v2.2.4.js"></script>
-  <script defer src="./js/main.js"></script>
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/ssh.min.css">
+  <link rel="stylesheet" href="./css/se.css">
+  <link rel="stylesheet" href="./css/jy.css">
+  <link rel="stylesheet" href="./css/jr.css">
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
   <header id="hd" class="fixed-top bg-white">
     <div class="wrap  text-center container-lg position-relative">
@@ -92,19 +111,18 @@
             </div>
           </div>
           <div class="swiper-slide bgimg3">
-
-            <div class="effecttext"><strong>리뷰 쓰면 쌓이는 포인트!</strong>
-              <p>sns 후기 인증 시 2,000원 적립</p>
+            <div class="d-flex justify-content-start align-items-center container">
+              <div class="col-4 ms-5 ps-5 event3">sns 후기 인증하면 <br> 쿠폰 증정
+              </div>
             </div>
-          </div>
 
+          </div>
+        </div>
+        <div class="container-md d-none d-md-block position-absolute btnsCenter">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="container-md d-none d-md-block position-absolute btnsCenter">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
 
 
   </section>
@@ -118,41 +136,49 @@
           <a href="">
             <img class="rounded-circle" src="./img/subscribe/subscribe-1.jpg" alt="">
             <div class="box-name">증류주 담화박스</div>
-            <div class="box-explain">증류주 담화박스에 대한 설명</div>
           </a>
         </div>
         <div class="subscribe-wrap">
           <a href="">
             <img class="rounded-circle" src="./img/subscribe/subscribe-2.jpg" alt="">
             <div class="box-name">종합 담화박스</div>
-            <div class="box-explain">종합 담화박스에 대한 설명</div>
           </a>
         </div>
         <div class="subscribe-wrap">
           <a href="">
             <img class="rounded-circle" src="./img/subscribe/subscribe-3.jpg" alt="">
             <div class="box-name">청주 담화박스</div>
-            <div class="box-explain">청주 담화박스에 대한 설명</div>
           </a>
         </div>
       </div>
       <button class="ssh--btn-apply">지금 신청하기</button>
 
+      <div id="popup" data-aos="fade-up" data-aos-anchor="#bestTitle" data-aos-duration="750">
+        <div class="popup-content">
+          <img src="./img/ETC/앱다운혜택.png" alt="">
+          <div class="popup-btn">
+            <a class="oneday-close" href="javascript:void(0);" onclick="exit2()">하루동안 보지 않기</a>
+            <!-- <input type="checkbox" name="layer-close"> -->
+            <a class="close" href="javascript:void(0);" onclick="exit()">닫기</a>
+          </div>
+        </div>
+      </div>
 
-      <div class="appdown" data-aos="fade-right" data-aos-anchor="#bestTitle">
-        <img src="./img/ETC/앱다운혜택.png" alt="">
-        <!-- test -->
+      <div id="cat" data-aos="fade-left" data-aos-anchor="#bestTitle" data-aos-duration="750">
+        <img src="./img/subscribe_cat.png" alt="">
       </div>
 
     </section>
 
     <section id="bestTitle" class="text-center mb-5 scrolla">
       <!-- <h2><a href="">BEST 타이틀</a></h2> -->
-      <div class="d-flex">
+      <div class="d-flex align-items-center bg-transparent">
 
         <div class="slide-box position-relative">
-          <h2 class="best-ment">슬고래들의<br>PICK !</h2>
-          <button class="ssh--btn-go-now">지금 바로 보러가기</button>
+          <h2 class="best-ment">술고래들의<br>PICK !</h2>
+          <button class="ssh--btn-go-now">지금 바로 보러가기
+            <i class="bi bi-box-arrow-up-right"></i>
+          </button>
           <!-- <div class="swiper-pagination"></div> -->
           <div class="slide-box-btns d-flex position-absolute">
             <div class="swiper-button-prev">
@@ -168,36 +194,64 @@
               <a href="">
                 <img src="./img/탁주/구름을 벗삼아.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">구름을 벗삼아</div>
+                <div class="hashtag">#부드러운 #고급막걸리</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <a href="">
                 <img src="./img/탁주/나루 생.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">나루 생막걸리</div>
+                <div class="hashtag">#부드러운 #생막걸리</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <a href="">
                 <img src="./img/탁주/담은 블랙.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">담은 블랙</div>
+                <div class="hashtag">#부드러운 #고급막걸리</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <a href="">
                 <img src="./img/탁주/담은.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">담은</div>
+                <div class="hashtag">#부드러운 #고급막걸리</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <a href="">
                 <img src="./img/탁주/대대포 블루.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">대대포 블루</div>
+                <div class="hashtag">#부드러운 #고급막걸리</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <a href="">
                 <img src="./img/탁주/막쿠.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">막쿠</div>
+                <div class="hashtag">#부드러운 #고급막걸리</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <a href="">
                 <img src="./img/탁주/보라 막걸리.jpg" alt="">
               </a>
+              <div class="pickbox">
+                <div class="picktitle">보라 막걸리</div>
+                <div class="hashtag">#부드러운 #고급막걸리</div>
+              </div>
             </div>
           </div>
         </div>
@@ -207,170 +261,637 @@
 
     <section id="itemTitle" class="mb80 mt80 wrap scrolla">
       <h2 class="text-center"><a href="" class="text-decoration-none">지금 당장 술 담아보기</a></h2>
+      <!-- itemTitle 카테고리 -->
       <ul class="d-flex justify-content-around itemTitleBox">
-        <li class="d-flex flex-md-column align-items-center">
+        <li class="d-flex flex-column align-items-center menu" data-filter=".set">
           <img src="./img/icon_only_sooldamhwa.png" alt="담화박스">
           <div class="itemTitle">담화박스</div>
         </li>
-        <li class="d-flex flex-md-column align-items-center">
+        <li class="d-flex flex-column align-items-center menu" data-filter=".cheongju">
           <img src="./img/icon_cheongju.png" alt="담화박스">
           <div class="itemTitle">청주</div>
         </li>
-        <li class="d-flex flex-md-column align-items-center">
+        <li class="d-flex flex-column align-items-center menu" data-filter=".gwashilju">
           <img src="./img/icon_gwashilju.png" alt="담화박스">
           <div class="itemTitle">과실주</div>
         </li>
-        <li class="d-flex flex-md-column align-items-center">
+        <li class="d-flex flex-column align-items-center menu" data-filter=".jeungryuju">
           <img src="./img/icon_jeungryuju.png" alt="담화박스">
           <div class="itemTitle">증류주</div>
         </li>
-        <li class="d-flex flex-md-column align-items-center">
+        <li class="d-flex flex-column align-items-center menu" data-filter=".takju">
           <img src="./img/icon_takju.png" alt="담화박스">
           <div class="itemTitle">탁주</div>
         </li>
-        <li class="d-flex flex-md-column align-items-center">
+        <li class="d-flex flex-column align-items-center menu" data-filter=".merchandise">
           <img src="./img/icon_merchandise.png" alt="담화박스">
           <div class="itemTitle">술잔</div>
         </li>
       </ul>
+      <!-- itemTitle 컨텐츠 -->
+      <div class="itemImgWrap ">
+        <div class="itemImgWrap_margin d-flex flex-wrap ">
+          <!-- ☆JS로 데이터 입력. contents-manger.js-->
+        </div>
+        <!-- 파트2 -->
+        <div class="itemImgWrap hideMenu">
+          <div class="itemImgWrap_margin d-flex flex-wrap ">
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span><img src="./img/과실주/추사 애플 와인.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">추사 애플 와인</div>
+                  <div class="productPrice ">22000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">사과향 가득 와인</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox jeungryuju">
+              <a href="">
+                <span><img src="./img/증류주/모리.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">모리</div>
+                  <div class="productPrice ">9800원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">보리로 만든 소주</p>
+                </div>
+            </div>
+            </a>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/한청.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">한청</div>
+                  <div class="productPrice ">20000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">새콤달콤한 청주</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span><img src="./img/과실주/신애유자.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">신애유자</div>
+                  <div class="productPrice ">5900원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">유자사이더</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span><img src="./img/과실주/고도리 화이트 와인.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">고도리 화이트 와인</div>
+                  <div class="productPrice ">20000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">거봉으로 만든 와인</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox jeungryuju">
+              <a href="">
+                <span><img src="./img/증류주/추사.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">추사</div>
+                  <div class="productPrice ">5900원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">달콤한 사과맛</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox takju">
+              <a href="">
+                <span>
+                  <img src="./img/탁주/삼양춘 탁주.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">삼양춘</div>
+                  <div class="productPrice ">3610원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">맑고 달콤한 막걸리</p>
+                </div>
+              </a>
+            </div>
 
-      <div class="itemImgWrap">
-        <div class="itemImgWrap_margin d-flex flex-wrap justify-content-between">
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/과실주/고도리 화이트 와인.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/LllO-1630577161746-밀담24+2병세트-4.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">밀담24+2병세트</div>
+                  <div class="productPrice ">26000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">달콤한 소주를 대용량으로</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
-            </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/과실주/샤인머스켓와인.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </a>
+            </div>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/h7Df-1635746163995-여포의 꿈 세트_재촬영-2.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">여포의 꿈 세트</div>
+                  <div class="productPrice ">45000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">영동의 와이너리 명가</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
-            </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/증류주/겨울소주.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </a>
+            </div>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/aLv3-1623070083371-세종대왕어주2병 선물세트-4.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">세종대왕어주2병 선물세트</div>
+                  <div class="productPrice ">37180원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">초정약수로 빚은 술</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
+            </div>
             </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/청주/유자주.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/O5OU-1633054157524-지란지교+3종세트.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">지란지교 3종세트</div>
+                  <div class="productPrice ">49000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">묵직한 술을 좋아하는 분에게!</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
-            </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/과실주/심쿵하리 사과.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </a>
+            </div>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/6bwu-1643394934707-Sjpg.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">서설 선물세트</div>
+                  <div class="productPrice ">33000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">티없이 맑고 깨끗함</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
-            </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/과실주/복숭아 와인.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </a>
+            </div>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/4XsL-1629958500440-BB6.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">삼천갑자 동방주 선물세트</div>
+                  <div class="productPrice ">30000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">인삼 한 뿌리 통째로!</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
-            </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/증류주/꿀샘.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </a>
+            </div>
+            <div class="Imgbox set">
+              <a href="">
+                <span><img src="./img/set/Dj1e-1676617940939-송로주 선물세트-3.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">송로주 선물세트</div>
+                  <div class="productPrice ">98000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">솔맛음료 좋아하시는 분들께!</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
-            </a>
-          </div>
-          <div class="Imgbox">
-            <a href="">
-              <img src="./img/탁주/대대포 블루.jpg" alt="">
-              <div class="ItemDesc">
-                <div class="productName fs-3">제품타이틀</div>
-                <div class="productPrice fs-2">12000원</div>
-                <div class="starNum d-flex justify-content-between">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              </a>
+            </div>
+            <div class="Imgbox set">
+              <a href="">
+                <span>
+                  <img src="./img/set/j0Jx-1623069917640-고소리술 선물세트-4.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">고소리술 선물세트</div>
+                  <div class="productPrice ">110000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">전통 증류기 고소리</p>
                 </div>
-                <p class="desc">이거 맛있어요 굳 강추</p>
-              </div>
+              </a>
+            </div>
+
+
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/단상지교.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">단상지교</div>
+                  <div class="productPrice ">20000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">가을에 어울리는 술</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/두견주.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">두견주</div>
+                  <div class="productPrice ">7700원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">귤피가 들어간 술</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/매화깊은밤.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">매화깊은밤</div>
+                  <div class="productPrice ">9900원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">매화깊은밤</p>
+                </div>
+            </div>
             </a>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/홍삼명주.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">홍삼명주</div>
+                  <div class="productPrice ">8550원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">상쾌한 솔향이 입안 가득!</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/소곡주.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">소곡주</div>
+                  <div class="productPrice ">13500원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">눈처럼 맑은 맛의 술</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span><img src="./img/청주/우렁이쌀청주.jpg" alt=""></span>
+                <div class="ItemDesc">
+                  <div class="productName ">우렁이쌀청주</div>
+                  <div class="productPrice ">19500원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">청와대의 선택</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox cheongju">
+              <a href="">
+                <span>
+                  <img src="./img/청주/잣진주.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">잣진주</div>
+                  <div class="productPrice ">3420원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">구수한 쌀의 맛</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span>
+                  <img src="./img/과실주/스윗마ㅏㅁ.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">스윗마마</div>
+                  <div class="productPrice ">5700원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">진한 달콤함</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span>
+                  <img src="./img/과실주/금이산 복숭아 와인.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">금이산 복숭아 와인</div>
+                  <div class="productPrice ">10200원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">맛있는 술은 오디있지?</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span>
+                  <img src="./img/과실주/혼디주.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">혼디주</div>
+                  <div class="productPrice ">25000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">자두로 만든 와인</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span>
+                  <img src="./img/과실주/유채.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">유채</div>
+                  <div class="productPrice ">21000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">아카시아꽃 꿀이 들어간</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox gwashilju">
+              <a href="">
+                <span>
+                  <img src="./img/과실주/요새로제.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">요새로제</div>
+                  <div class="productPrice ">6600원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">복숭아 애플사이더</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox jeungryuju">
+              <a href="">
+                <span>
+                  <img src="./img/증류주/서울의밤.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">서울의밤</div>
+                  <div class="productPrice ">12800원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">가을 낙엽 닮은 달콤한 향을 지닌 감 보드카</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox jeungryuju">
+              <a href="">
+                <span>
+                  <img src="./img/증류주/진도 아리랑 홍주.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">진도 아리랑 홍주</div>
+                  <div class="productPrice ">11520원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">한국의 고량주</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox jeungryuju">
+              <a href="">
+                <span>
+                  <img src="./img/증류주/서울고량주.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">서울고량주</div>
+                  <div class="productPrice ">13410원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">소주 전용 옹기에서 숙성을 거친</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox jeungryuju">
+              <a href="">
+                <span>
+                  <img src="./img/증류주/안동소주일품.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">안동소주일품</div>
+                  <div class="productPrice ">5890원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">달콤한 매실주</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="Imgbox takju">
+              <a href="">
+                <span>
+                  <img src="./img/탁주/술공방.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">술공방</div>
+                  <div class="productPrice ">20000원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">깔끔하고 가볍</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox takju">
+              <a href="">
+                <span>
+                  <img src="./img/탁주/원숭이.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">원숭이</div>
+                  <div class="productPrice ">5200원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">야쿠르트와 막걸리의 만남</p>
+                </div>
+              </a>
+            </div>
+            <div class="Imgbox takju">
+              <a href="">
+                <span>
+                  <img src="./img/탁주/자연담은 복분자막.jpg" alt="">
+                </span>
+                <div class="ItemDesc">
+                  <div class="productName ">자연담은 복분자막</div>
+                  <div class="productPrice ">26700원</div>
+                  <div class="starNum d-flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="desc">새콤달콤 포도 스파클링</p>
+                </div>
+              </a>
+            </div>
+
           </div>
         </div>
         <button>더보기</button>
@@ -378,8 +899,8 @@
 
     </section>
 
-    <section id="review" class="mb-5 wrap">
-      <h2 class="text-center"><a href="">상품후기</a></h2>
+    <section id="review" class="mb-5">
+      <h2 class="text-center"><a href="">실시간 상품후기</a></h2>
       <div id="photoRvbox" class="d-flex justify-content-center align-content-center">
         <div class="swiper">
 
@@ -388,10 +909,12 @@
             <div class="swiper-slide">
               <div>
                 <img src="./img/탁주/구름을 벗삼아.jpg" alt="" id="ptrv">
-                <div>
+                <p>어울리는 안주 만들어 남편과 같이 마셔봐야겠어요.</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
                   <a>
-                    <div class="rv-star ali">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                    <div class="rv-star ">
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -400,7 +923,6 @@
                       </div>
                     </div>
                   </a>
-                  <p>re15님, 부모님도 많이 좋아하셨습니다.</p>
                 </div>
               </div>
             </div>
@@ -408,10 +930,11 @@
             <div class="swiper-slide">
               <div>
                 <img src="./img/탁주/술 취한 원숭이.jpg" alt="" id="ptrv">
-                <div>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -420,18 +943,20 @@
                       </div>
                     </div>
                   </a>
-                  <p>rfsdf님, 이거 진짜 존맛탱입니다ㅜ</p>
                 </div>
+                <p> 이거 진짜 존맛탱입니다ㅜ</p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div>
                 <img src="./img/탁주/보라 막걸리.jpg" alt="" id="ptrv">
-                <div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-06.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                      <div class="starNum d-flex jtext-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -440,7 +965,6 @@
                       </div>
                     </div>
                   </a>
-                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
                 </div>
               </div>
             </div>
@@ -448,10 +972,11 @@
             <div class="swiper-slide">
               <div>
                 <img src="./img/증류주/문배술.jpg" alt="" id="ptrv">
-                <div>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -460,27 +985,24 @@
                       </div>
                     </div>
                   </a>
-                  <p>r854w님, bbbb 굿</p>
                 </div>
+                <p>bbbb 굿~</p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div>
                 <img src="./img/증류주/원소주.jpg" alt="" id="ptrv">
-                <div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-04.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                       </div>
                     </div>
                   </a>
-                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
                 </div>
               </div>
             </div>
@@ -488,10 +1010,11 @@
             <div class="swiper-slide">
               <div>
                 <img src="./img/과실주/자두와인.jpg" alt="" id="ptrv">
-                <div>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-07.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -500,19 +1023,20 @@
                       </div>
                     </div>
                   </a>
-                  <p>werjh님, 색도 맛도 정말 너무 좋아요!</p>
                 </div>
+                <p>색도 맛도 정말 너무 좋아요!</p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div>
                 <img src="./img/탁주/담은 블랙.jpg" alt="" id="ptrv">
-                <div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
-                        <span></span>
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -520,7 +1044,6 @@
                       </div>
                     </div>
                   </a>
-                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
                 </div>
               </div>
             </div>
@@ -528,10 +1051,11 @@
             <div class="swiper-slide">
               <div>
                 <img src="./img/청주/홍삼명주.jpg" alt="" id="ptrv">
-                <div>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-04.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -540,27 +1064,26 @@
                       </div>
                     </div>
                   </a>
-                  <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
                 </div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div>
                 <img src="./img/증류주/겨울소주.jpg" alt="" id="ptrv">
-                <div>
+                <p>rew님, 놀러갈 때 꼭 사고 갑니다~</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
-                        <span></span>
-                        <span></span>
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
                       </div>
                     </div>
                   </a>
-                  <p>rew님, 놀러갈 때 꼭 사고 갑니다~</p>
                 </div>
               </div>
             </div>
@@ -568,10 +1091,11 @@
             <div class="swiper-slide">
               <div>
                 <img src="./img/탁주/설하담.png" alt="" id="ptrv">
-                <div>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-07.svg" alt=""> re15님,</a>
                   <a>
                     <div class="rv-star">
-                      <div class="starNum d-flex justify-content-between align-content-center">
+                      <div class="starNum d-flex text-center w-100">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -580,10 +1104,210 @@
                       </div>
                     </div>
                   </a>
-                  <p>tdhff님, 정말 맛있게 잘 먹었습니다!</p>
+                </div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/구름을 벗삼아.jpg" alt="" id="ptrv">
+                <p>부모님도 많이 좋아하셨습니다.</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-02.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star ali">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/술 취한 원숭이.jpg" alt="" id="ptrv">
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p>이거 진짜 존맛탱입니다ㅜ</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/보라 막걸리.jpg" alt="" id="ptrv">
+                <p>rew님, 정말 맛있게 잘 먹었습니다!</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/증류주/문배술.jpg" alt="" id="ptrv">
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-06.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p>bbbb 굿</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/증류주/원소주.jpg" alt="" id="ptrv">
+                <p>정말 맛있게 잘 먹었습니다!</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-02.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/과실주/자두와인.jpg" alt="" id="ptrv">
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-03.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p>색도 맛도 정말 너무 좋아요!</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/담은 블랙.jpg" alt="" id="ptrv">
+                <p>정말 맛있게 잘 먹었습니다!</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-05.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/청주/홍삼명주.jpg" alt="" id="ptrv">
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-04.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/증류주/겨울소주.jpg" alt="" id="ptrv">
+                <p>놀러갈 때 꼭 사고 갑니다~</p>
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-01.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./img/탁주/설하담.png" alt="" id="ptrv">
+                <div id="face" class="d-flex justify-content-center">
+                  <a id="face-t"><img src="./img/face1-02.svg" alt=""> re15님,</a>
+                  <a>
+                    <div class="rv-star">
+                      <div class="starNum d-flex text-center w-100">
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p>정말 맛있게 잘 먹었습니다!</p>
+              </div>
+            </div>
+
 
           </div>
         </div>
@@ -591,49 +1315,67 @@
 
       <div class="swiper-pagination"></div>
       </div>
+      <div id="goinsta" class="d-flex align-items-center justify-content-center text-center">
+        <a>다른 리뷰도 궁금하다면?</a>
+        <button class="sooldam-btn" onclick="window.open('https://www.instagram.com/sooldamhwa/tagged/')">
+          <img src="./img/icon.instagram.jpg" alt=""></button>
+      </div>
+
 
     </section>
 
-    <section id="contact" class="w-50 mx-auto wrap">
+    <section id="contact" class="mx-auto wrap">
+
       <h2 class="text-center">
-        <a href="">입점문의</a>
+        <a>입점문의</a>
       </h2>
 
-      <div class="contactbox d-flex wrap">
-        <form action="#" name="contact-info" method="post" class="container d-flex">
+      <div class="contactbox d-flex">
+        <form action="#" name="contact-info" method="post" class="containe">
+          <div class="text-center">
+            <div class="d-flex justify-content-center align-content-center">
+              <div id="n-c-e" class="d-flex flex-column">
 
-          <div class="d-flex flex-column">
+                <div class="him h-100">
+                  <label for="name" class="me-4">이름</label>
+                  <input class="ms-4" type="text" name="name" placeholder="이름" required>
+                </div>
 
-            <div class="him w-100">
-              <label for="name">이름</label>
-              <input type="text" name="name" placeholder="이름" required>
+                <div class="him h-100">
+                  <label for="num">전화번호</label>
+                  <input type="text" name="num" placeholder="010-0000-0000" required>
+                </div>
+
+                <div class="him h-100 ">
+                  <label for="email">이메일</label>
+                  <input class="ms-3" type="email" name="email" placeholder="example@example.com" required>
+                </div>
+              </div>
+
+              <div class="him h-100 w-100" id="c-m">
+                <label for="message">메시지</label>
+                <textarea id="message" name="message" cols="19" rows="5" placeholder="메세지를 입력해주세요^^" required
+                  style=" background-color: transparent"></textarea>
+              </div>
             </div>
 
-            <div class="him w-100">
-              <label for="num">전화번호</label>
-              <input type="text" name="num" placeholder="010-0000-0000" required>
-            </div>
+            <div id="send">
+              <div>
 
-            <div class="him w-100">
-              <label for="email">이메일</label>
-              <input type="email" name="email" placeholder="example@example.com" required>
+                <label for="agree">개인정보수집 이용 동의</label>
+                <input type="checkbox" id="agree">
+                <input type="submit" name="send-btn" value="보내기" onclick='sendInfo()' class="sooldam-btn mt-3">
+
+              </div>
             </div>
           </div>
-
-          <div class="him h-100 w-100" id="c-m">
-            <label for="message">메시지</label>
-            <textarea id="message" name="message" cols="23" rows="5" placeholder="메세지를 입력해주세요^^" required
-              style="background-color: transparent"></textarea>
-          </div>
-
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <input type="submit" name="send-btn" value="보내기" class="sooldam-btn m-2">
+        </form>
       </div>
 
 
-      </form>
+
+
+
     </section>
 
   </main>
@@ -674,6 +1416,13 @@
 
 
   </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/data.js"></script>
+  <script src="./js/jquery-v2.2.4.js"></script>
+  <script src="./js/popup.js"></script>
+  <script src="./js/contents-manger.js"></script>
+  <script src="./js/main.js"></script>
 
 
 </body>
