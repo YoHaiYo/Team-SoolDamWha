@@ -1,3 +1,4 @@
+
 var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 
@@ -23,8 +24,8 @@ var swiperMain = new Swiper('#promotionSwiper .swiper', {
 
 });
 
-var x = topDom = $("#hd").height();
-$("#promotion").css("padding-top", topDom);
+var x = $("#hd").height();
+$("#promotion").css("padding-top", x);
 $(document).ready(function () {
   x;
   $(window).resize(function () {
